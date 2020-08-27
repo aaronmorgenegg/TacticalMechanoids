@@ -1,0 +1,89 @@
+Tactical Mechanoids
+
+Adds X new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits.
+
+Mechanoids:
+
+Belcher:
+	- Description
+		- Designed to exploit the vulnerabilities of biological lifeforms, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.
+	- Appearance
+		- Big, ugly, industrial polluter, with a large cauldron of toxic sludge on it's back.
+	- Stats
+		- Slow-medium speed, Medium tankiness, Short-medium range.
+	- Attacks
+		- AOE toxic sludge attack that does no regular damage, but adds toxic exposure and slows movement.
+	- Special
+		- Toxic damage and movement speed slow. Disassembles into steel and chemfuel. Spills sludge on death.
+
+Mechanite Drone:
+	- Description
+		- A simple repair bot that hosts a swarm of constructive mechanites that heal nearby mechanoids. Fragile on its own, but quite effective effective in long engagements, especially if protected by other mechanoids.
+	- Appearance
+		- Canister with 4 spindly arms, similar to KOTOR medical droids.
+	- Stats
+		- Slow, floating movement, fragile, short-medium range.
+	- Attacks
+		- No melee attack, short-ranged laser cutter that works as a makeshift weapon
+	- Special
+		- Heals nearby mechanoids.
+
+Carrier:
+	- Description
+		- Large, reinforced transport mechanoid with a simple objective - Deliver an army of dangerous melee mechanoids to the frontlines safely.
+	- Appearance
+		- Large armored box on wheels, like a sand crawler.
+	- Stats
+		- Tanky, medium speed, weak melee attack.
+	- Attacks
+		- Weak ramming attack
+	- Special
+		- Spawns several smaller mechanoids on death(Scythers, Mechanite Drones, flamebot, skullywag, crawler, aura)
+
+Shredder:
+	- Description
+		- A horrific death machine, almost entirely composed of razor-sharp spinning blades. Those who come face to face with a Shredder are lucky to escape with missing limbs - the unlucky are turned into mincemeat. 
+	- Appearance
+		- Boxy, with the front half dominated by rows of spinning blades.
+	- Stats
+		- Slow movement, Moderately tanky, High melee damage
+	- Attacks
+		- High melee damage blades with a bonus chance to remove limbs.
+	- Special
+		- Butchers downed or dead pawns.
+
+Herald:
+	- Description
+		- A fast moving, 4-legged hound-like mechanoid, with 2 deafening "sound cannons" on it's back. The sound it makes triggers fear responses, and is powerful enough to confuse and even incapacitate humans.
+	- Appearance
+		- small-medium sized Mechanical dog with 2 large speakers on its back.
+	- Stats
+		- Fast moving, low durability, average melee attack, medium range sonic attack.
+	- Attacks
+		- Average melee attack, long range sonic attack that damages through cover and armor, effectiveness is governed by hearing. Damages ears and brain, lowering consciousness, mood debuff, and vomiting.
+	- Special
+		- Unique sonic weaponry.
+
+ShellShock?(name?):
+	- Description
+		- 
+	- Appearance
+		- Tortoise? with mortar strapped to back
+	- Stats
+		- Tanky, Slow, long ranged.
+	- Attacks
+		- Long ranged mortar attack, uses either explosive or incendiary shells.
+	- Special
+		- Mortar attack
+
+Lightning bot?(name?):
+	- Description
+		- 
+	- Appearance
+		- small-medium sized bot with 2 coils on it's back.
+	- Stats
+		- medium speed, low-medium tankiness, medium range.
+	- Attacks
+		- Medium range lightning attack that shocks/stuns living things(like the sky eels), and does EMP damage to turrets.
+	- Special
+		- lightning attack, effective against turrets.
