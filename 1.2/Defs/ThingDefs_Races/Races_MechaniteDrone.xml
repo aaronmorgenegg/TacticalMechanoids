@@ -49,8 +49,9 @@
 			    <isFloater>true</isFloater>
 			    <canCrossWater>true</canCrossWater>
 		    </li>
-			<li Class="Behaviours.CompProperties_GenerateConstructiveMechanites">
+			<li Class="Behaviours.CompProperties_GenerateMechanites">
 				<rateInTicks>500</rateInTicks>
+				<nonMechanoidChance>0.1</nonMechanoidChance>
 			</li>
 		</comps>
     <race>

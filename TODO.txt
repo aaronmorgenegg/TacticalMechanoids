@@ -1,4 +1,5 @@
-Create behaviour for floating , for MechaniteDrone and Hex.
+CompProperties_Floating , for MechaniteDrone and Hex.
 Create behaviour to disable mechanoid spawns individually
-TM_ConstructiveMechaniteSource - Tag for mechanite canister, determines rate of mechanite repair
-TM_MechanoidLaserCutter - Weapon for MechaniteDrone
+CompProperties_GenerateMechanites - behaviour to generate repair and disease mechanites, based on canister strength.
+TM_MechaniteSource - Tag for mechanite canister, determines rate of mechanite generation
+TM_MechanoidLaserCutter - Weapon for MechaniteDrone - inherit from VWE - Laser?

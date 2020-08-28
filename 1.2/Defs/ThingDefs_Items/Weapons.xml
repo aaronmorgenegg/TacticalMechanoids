@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef parent="BaseBullet" Name="TM_BaseMechProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>15</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef Parent="BaseBullet" Name="TM_BaseMechBlastProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+			<shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>15</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGunWithQuality" Name="TM_MechanoidLaserCutter">
+		<label>laser cutter</label>
+		<description>A surgical laser gun.</description>
+		<graphicData>
+			<texPath>Item/Weapon/Mechanoid/LaserCutter/laser_cutter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1400</MarketValue>
+			<Mass>5</Mass>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<menuHidden>True</menuHidden>
+		<generateCommonality>1.0</generateCommonality>
+		<tradeability>None</tradeability>
+		<tools>
+			<li>
+				<label>laser</label>
+				<capacities>
+					<li>Cut</li>
+					<li>Burn</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+		</tools>
+		<verbs>
+			<li>
+
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>TM_LaserProjectile</defaultProjectile>
+
+				<warmupTime>2</warmupTime>
+				<range>10</range>
+				<burstShotCount>2</burstShotCount>
+				<soundCast>TM_LaserCutter</soundCast>
+				<muzzleFlashScale>1</muzzleFlashScale>
+
+			</li>
+		</verbs>
+	</ThingDef>
+
+	
+	<ThingDef ParentName="AA_BaseMechProjectile">
+		<defName>TM_LaserProjectile</defName>
+		<label>laser</label>
+		<graphicData>
+			<texPath>Item/Weapon/Mechanoid/LaserCutter/laser_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>60</speed>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+
+		</projectile>
+	</ThingDef>
+	
+	
+</Defs>

@@ -23,7 +23,7 @@
 		<bleedRate>0</bleedRate>
 		<alive>false</alive>
 		<tags>
-			<li>TM_ConstructiveMechaniteSource</li>
+			<li>TM_MechaniteSource</li>
 		</tags>
 	</BodyPartDef>
 
