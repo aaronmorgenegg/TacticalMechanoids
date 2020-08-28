@@ -1,6 +1,6 @@
 Tactical Mechanoids
 
-Adds X new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits.
+Adds 7 new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits.
 
 Mechanoids:
 
@@ -64,21 +64,21 @@ Herald:
 	- Special
 		- Unique sonic weaponry.
 
-ShellShock?(name?):
+Hex:
 	- Description
-		- 
+		- A hyper-intelligent mechanoid AI contained within a dense psy-amp lattice. The Hex projects malevolent psionic energies against all biological life.
 	- Appearance
-		- Tortoise? with mortar strapped to back
+		- floating "spherical" drone, hexagon lattice.
 	- Stats
-		- Tanky, Slow, long ranged.
+		- somewhat fragile, Floating, slow-medium speed, weak in melee
 	- Attacks
-		- Long ranged mortar attack, uses either explosive or incendiary shells.
+		- psionics (Psychic Lance(direct brain damage attack), Berserk, vertigo pulse, chaos skip, focus)
 	- Special
-		- Mortar attack
+		- Uses psycasts
 
-Lightning bot?(name?):
+Dynamo:
 	- Description
-		- 
+		- A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans, but is particularly effective against turrets.
 	- Appearance
 		- small-medium sized bot with 2 coils on it's back.
 	- Stats
