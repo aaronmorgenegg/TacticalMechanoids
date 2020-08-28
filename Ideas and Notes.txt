@@ -6,7 +6,7 @@ Mechanoids:
 
 Belcher:
 	- Description
-		- Designed to exploit the vulnerabilities of biological lifeforms, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.
+		- A hulking mechanoid whose body is a veritable chemistry lab. Equipped for terraforming planets as well as chemical warfare, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.
 	- Appearance
 		- Big, ugly, industrial polluter, with a large cauldron of toxic sludge on it's back.
 	- Stats
@@ -14,7 +14,7 @@ Belcher:
 	- Attacks
 		- AOE toxic sludge attack that does no regular damage, but adds toxic exposure and slows movement.
 	- Special
-		- Toxic damage and movement speed slow. Disassembles into steel and chemfuel. Spills sludge on death.
+		- Toxic damage and movement speed slow. Disassembles into steel, chemfuel, and neutroamine. Spills sludge on death.
 
 Mechanite Drone:
 	- Description
@@ -74,7 +74,7 @@ Hex:
 	- Attacks
 		- psionics (Psychic Lance(direct brain damage attack), Berserk, vertigo pulse, chaos skip, focus)
 	- Special
-		- Uses psycasts
+		- Uses psycasts, disassembles into psycast trainers.
 
 Dynamo:
 	- Description

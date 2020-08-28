@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\1.2",
+    "\\1.2\\Defs",
+    "\\1.2\\Defs\\BodyPartDefs",
+    "\\1.2\\Defs\\BodyPartGroupDefs",
     "\\Reference",
-    "\\Reference\\More Mechanoids",
-    "\\Reference\\More Mechanoids\\About",
-    "\\Reference\\More Mechanoids\\Source",
-    "\\Reference\\More Mechanoids\\Source\\RimWorld_Mechanoids",
-    "\\Reference\\More Mechanoids\\Source\\RimWorld_Mechanoids\\Mechanoids",
-    "\\Reference\\More Mechanoids\\Textures\\Things",
-    "\\Reference\\More Mechanoids\\Textures\\UI\\Icons",
-    "\\Reference\\More Mechanoids\\Textures\\UI\\Icons\\Mechanoid"
+    "\\Reference\\Mechanoids Extraordinaire",
+    "\\Reference\\Mechanoids Extraordinaire\\1.1",
+    "\\Reference\\Mechanoids Extraordinaire\\1.1\\Defs",
+    "\\Reference\\Mechanoids Extraordinaire\\1.1\\Defs\\BodyPartDefs"
   ],
-  "SelectedNode": "\\Reference\\More Mechanoids\\Source\\RimWorld_Mechanoids.sln",
+  "SelectedNode": "\\Reference\\Alpha Animals\\1.2\\Defs\\ThingDefs_RacesMechanoids\\Races_Goliath.xml",
   "PreviewInSolutionExplorer": false
 }
