@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Tactical Mechanoids</name>
+	<supportedVersions>
+	  <li>1.2</li>
+   </supportedVersions>
+   <modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+		</li>
+	</modDependencies>
+	
+	<author>Mystrymuffins</author>
+	
+		<packageId>mystrymuffins.tacticalmechanoids</packageId>
+
+	<description>Adds new types of mechanoids to rimworld.
+	
+&lt;size=24&gt;Features&lt;/size&gt;
+
+Adds 7 new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits. Adds some extra challenge, variety, and tactics to mechanoid combat.
+
+&lt;size=24&gt;Mechanoids&lt;/size&gt;
+
+		Belcher:
+		- Description
+		- Designed to exploit the vulnerabilities of biological lifeforms, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.
+		- Stats
+		- Slow speed, moderately tanky, Short-medium range.
+		- Attacks
+		- AOE toxic sludge attack that does no regular damage, but adds toxic exposure and slows movement.
+		- Special
+		- Toxic damage and movement speed slow. Disassembles into steel and chemfuel. Spills sludge on death.
+
+		Mechanite Drone:
+		- Description
+		- A simple repair bot that hosts a swarm of constructive mechanites that heal nearby mechanoids. Fragile on its own, but quite effective effective in long engagements, especially if protected by other mechanoids.
+		- Stats
+		- Slow, floating movement, fragile, short-medium range.
+		- Attacks
+		- No melee attack, short-ranged laser cutter that works as a makeshift weapon
+		- Special
+		- Heals nearby mechanoids.
+
+		Carrier:
+		- Description
+		- Large, reinforced transport mechanoid with a simple objective - Deliver an army of dangerous melee mechanoids to the frontlines safely.
+		- Stats
+		- Very tanky, medium speed, weak melee attack.
+		- Attacks
+		- Weak ramming attack
+		- Special
+		- Spawns several smaller mechanoids on death(Scythers, Mechanite Drones, flamebot, skullywag, crawler, aura)
+
+		Shredder:
+		- Description
+		- A horrific death machine, almost entirely composed of razor-sharp spinning blades. Those who come face to face with a Shredder are lucky to escape with missing limbs - the unlucky are turned into mincemeat.
+		- Stats
+		- Slow movement, Moderately tanky, High melee damage
+		- Attacks
+		- High melee damage blades with a bonus chance to remove limbs.
+		- Special
+		- Butchers downed or dead pawns.
+
+		Herald:
+		- Description
+		- A fast moving, 4-legged hound-like mechanoid, with 2 deafening "sound cannons" on it's back. The sound it makes triggers fear responses, and is powerful enough to confuse and even incapacitate humans.
+		- Stats
+		- Fast moving, low durability, average melee attack, medium range sonic attack.
+		- Attacks
+		- Average melee attack, long range sonic attack that damages through cover and armor, effectiveness is governed by hearing. Damages ears and brain, lowering consciousness, mood debuff, and vomiting.
+		- Special
+		- Unique sonic weaponry.
+
+		Hex:
+		- Description
+		- A hyper-intelligent mechanoid AI contained within a dense psy-amp lattice. The Hex projects malevolent psionic energies against all biological life.
+		- Stats
+		- somewhat fragile, Floating, slow-medium speed, weak in melee
+		- Attacks
+		- psionics (Psychic Lance(direct brain damage attack), Berserk, vertigo pulse, chaos skip, focus)
+		- Special
+		- Uses psycasts
+
+		Dynamo:
+		- Description
+		- A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans, but is particularly effective against turrets.
+		- Stats
+		- medium speed, low-medium tankiness, medium range.
+		- Attacks
+		- Medium range lightning attack that shocks/stuns living things(like the sky eels), and does EMP damage to turrets.
+		- Special
+		- lightning attack, effective against turrets.
+
+&lt;size=24&gt;Compatibility&lt;/size&gt;
+Compatible with Alpha Animals
+Compatible with Mechanoids Extraordinaire
+Compatible with More Mechanoids
+
+Not tested with What the Hack, Combat extended, or other mods - compatibility not guaranteed.
+
+&lt;size=24&gt;Plans for the future&lt;/size&gt;
+More mechanoids
+More mod compatibility (CE, what the hack etc.)
+	</description>
+</ModMetaData>
