@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TacticalMechanoids", "TacticalMechanoids\TacticalMechanoids.vbproj", "{B8F3B19B-31A1-4B26-BE82-EEA92C4964EA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacticalMechanoids", "TacticalMechanoids\TacticalMechanoids.csproj", "{94F88739-C5C2-4E91-9165-6F6EEC4BC840}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8F3B19B-31A1-4B26-BE82-EEA92C4964EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8F3B19B-31A1-4B26-BE82-EEA92C4964EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8F3B19B-31A1-4B26-BE82-EEA92C4964EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8F3B19B-31A1-4B26-BE82-EEA92C4964EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94F88739-C5C2-4E91-9165-6F6EEC4BC840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F88739-C5C2-4E91-9165-6F6EEC4BC840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F88739-C5C2-4E91-9165-6F6EEC4BC840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F88739-C5C2-4E91-9165-6F6EEC4BC840}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {46687820-32DE-4233-9935-BAA6424EF3F0}
+		SolutionGuid = {679A59E5-F330-4E4F-918B-D0573C8FAF4D}
 	EndGlobalSection
 EndGlobal

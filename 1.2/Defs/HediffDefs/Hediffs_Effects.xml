@@ -3,7 +3,7 @@
 
 	<HediffDef>
 		<defName>TM_ConstructiveMechanites</defName>
-		<hediffClass>Behaviours.Hediff_ConstructiveMechanites</hediffClass>
+		<hediffClass>TacticalMechanoids.ConstructiveMechanites</hediffClass>
 		<label>constructive mechanites</label>
 		<description>Constructive mechanites from a nearby Mechanite Drone are repairing this mechanoid over time.</description>
 		<defaultLabelColor>(0,0.8,0.5)</defaultLabelColor>

@@ -1,8 +1,0 @@
-C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\Mods\TacticalMechanoids-DEV\Assemblies\TacticalMechanoids.dll
-C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\Mods\TacticalMechanoids-DEV\Assemblies\TacticalMechanoids.xml
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.vbprojAssemblyReference.cache
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.Resources.resources
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.vbproj.GenerateResource.cache
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.vbproj.CoreCompileInputs.cache
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.dll
-C:\Users\aaron\Documents\GitHub\TacticalMechanoids\TacticalMechanoids\TacticalMechanoids\obj\Debug\TacticalMechanoids.xml

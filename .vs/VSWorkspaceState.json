@@ -1,20 +1,18 @@
 {
   "ExpandedNodes": [
     "",
-    "\\1.2",
-    "\\1.2\\Defs",
-    "\\1.2\\Defs\\ThingDefs_Items",
     "\\Reference",
     "\\Reference\\Alpha Animals",
     "\\Reference\\Alpha Animals\\1.2",
     "\\Reference\\Alpha Animals\\1.2\\Defs",
     "\\Reference\\Alpha Animals\\1.2\\Defs\\ThingDefs_Items",
+    "\\Source",
     "\\Textures",
     "\\Textures\\Items",
     "\\Textures\\Items\\Weapons",
     "\\Textures\\Items\\Weapons\\Mechanoid",
     "\\Textures\\Items\\Weapons\\Mechanoid\\LaserCutter"
   ],
-  "SelectedNode": "\\Textures\\Items\\Weapons\\Mechanoid\\LaserCutter\\laser_projectile.png",
+  "SelectedNode": "\\TODO.txt",
   "PreviewInSolutionExplorer": false
 }
