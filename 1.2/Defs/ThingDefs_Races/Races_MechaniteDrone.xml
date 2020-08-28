@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoidFlier">
+    <defName>TM_MechaniteDrone</defName>
+    <label>mechanite_drone</label>
+    <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Fragile on its own, but quite a nuisance in long engagements, especially if protected by other mechanoids.</description>
+    <tools>
+      <li>
+        <label>laser cutter</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Burn</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>TM_LaserCutter</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      
+      <li>
+        <label>Arm</label>
+        <capacities>
+          <li>Blunt</li>
+		  <li>Cut</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>3</cooldownTime>
+        <linkedBodyPartsGroup>BodyAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+			<li Class="Behaviours.CompProperties_ChangeDef">
+				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<defToChangeTo>Mech_Pikeman</defToChangeTo>
+			</li>
+			<li Class="Behaviours.CompProperties_Repair">
+				<rateInTicks>30</rateInTicks>
+			</li>
+		</comps>
+    <race>
+      <body>TM_MechaniteDroneBody</body>
+      <baseHealthScale>1.0</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
+    </race>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>TM_MechaniteDrone</defName>
+    <label>mechanite_drone</label>
+    <race>TM_MechaniteDrone</race>
+    <combatPower>100</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Mechanoid/MechaniteDrone</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.6</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <defendPointRadius>0</defendPointRadius>
+    <weaponTags>
+    </weaponTags>
+  </PawnKindDef>
+
+ 
+
+</Defs>
