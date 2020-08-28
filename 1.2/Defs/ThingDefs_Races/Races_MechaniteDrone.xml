@@ -8,18 +8,6 @@
     <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
     <tools>
       <li>
-        <label>laser cutter</label>
-        <capacities>
-          <li>Cut</li>
-          <li>Burn</li>
-        </capacities>
-        <power>12</power>
-        <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>TM_LaserCutter</linkedBodyPartsGroup>
-        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
-      </li>
-      
-      <li>
         <label>surgical knife</label>
         <capacities>
 		  <li>Cut</li>
@@ -41,15 +29,15 @@
       </li>
     </tools>
 	<comps>
-			<li Class="Behaviours.CompProperties_ChangeDef">
+			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
 				<defToChangeTo>Mech_Pikeman</defToChangeTo>
 			</li>
-		    <li Class="Behaviours.CompProperties_Floating">
+		    <li Class="TacticalMechanoids.CompProperties_Floating">
 			    <isFloater>true</isFloater>
 			    <canCrossWater>true</canCrossWater>
 		    </li>
-			<li Class="Behaviours.CompProperties_GenerateMechanites">
+			<li Class="TacticalMechanoids.CompProperties_GenerateMechanites">
 				<rateInTicks>500</rateInTicks>
 				<nonMechanoidChance>0.1</nonMechanoidChance>
 			</li>

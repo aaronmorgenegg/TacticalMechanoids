@@ -3,14 +3,18 @@
     "",
     "\\1.2",
     "\\1.2\\Defs",
-    "\\1.2\\Defs\\BodyPartDefs",
-    "\\1.2\\Defs\\BodyPartGroupDefs",
+    "\\1.2\\Defs\\ThingDefs_Items",
     "\\Reference",
-    "\\Reference\\Mechanoids Extraordinaire",
-    "\\Reference\\Mechanoids Extraordinaire\\1.1",
-    "\\Reference\\Mechanoids Extraordinaire\\1.1\\Defs",
-    "\\Reference\\Mechanoids Extraordinaire\\1.1\\Defs\\BodyPartDefs"
+    "\\Reference\\Alpha Animals",
+    "\\Reference\\Alpha Animals\\1.2",
+    "\\Reference\\Alpha Animals\\1.2\\Defs",
+    "\\Reference\\Alpha Animals\\1.2\\Defs\\ThingDefs_Items",
+    "\\Textures",
+    "\\Textures\\Items",
+    "\\Textures\\Items\\Weapons",
+    "\\Textures\\Items\\Weapons\\Mechanoid",
+    "\\Textures\\Items\\Weapons\\Mechanoid\\LaserCutter"
   ],
-  "SelectedNode": "\\Reference\\Alpha Animals\\1.2\\Defs\\ThingDefs_RacesMechanoids\\Races_Goliath.xml",
+  "SelectedNode": "\\Textures\\Items\\Weapons\\Mechanoid\\LaserCutter\\laser_projectile.png",
   "PreviewInSolutionExplorer": false
 }
