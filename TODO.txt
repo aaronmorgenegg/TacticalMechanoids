@@ -1,1 +1,4 @@
-Create BaseMechanoidFlier , parent class for MechaniteDrone and Hex.
+Create behaviour for floating , for MechaniteDrone and Hex.
+Create behaviour to disable mechanoid spawns individually
+TM_ConstructiveMechaniteSource - Tag for mechanite canister, determines rate of mechanite repair
+TM_MechanoidLaserCutter - Weapon for MechaniteDrone

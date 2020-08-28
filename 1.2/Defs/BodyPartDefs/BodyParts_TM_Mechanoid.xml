@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<BodyPartDef>
+		<defName>TM_MechaniteDroneBody</defName>
+		<label>body</label>
+		<hitPoints>50</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechaniteCanister</defName>
+		<label>mechanite canister</label>
+		<hitPoints>25</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>TM_ConstructiveMechaniteSource</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechaniteLauncher</defName>
+		<label>body</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechaniteBay</defName>
+		<label>body</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechaniteFactory</defName>
+		<label>body</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechaniteReclamator</defName>
+		<label>body</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MaterialsProcessor</defName>
+		<label>body</label>
+		<hitPoints>5</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_LaserCutter</defName>
+		<label>body</label>
+		<hitPoints>3</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_SurgicalKnife</defName>
+		<label>body</label>
+		<hitPoints>1</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_Claw</defName>
+		<label>body</label>
+		<hitPoints>6</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_Repulsor</defName>
+		<label>body</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>

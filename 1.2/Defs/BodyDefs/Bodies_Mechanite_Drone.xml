@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<BodyDef>
+		<defName>TM_MechaniteDroneBody</defName>
+		<label>mechanite drone</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalHead</def>
+					<height>Top</height>
+					<coverage>0.10</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.01</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.01</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.01</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.01</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.01</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>TM_MechaniteCanister</def>
+					<coverage>0.50</coverage>
+					<groups>
+						<li>BodyAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>TM_MechaniteLauncher</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_MechaniteBay</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_MechaniteFactory</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_MechaniteReclamator</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_MaterialsProcessor</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>first shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>first arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>first hand</customLabel>
+									<coverage>0.2</coverage>
+									<parts>
+										<li>
+											<def>TM_LaserCutter</def>
+											<customLabel>first laser cutter</customLabel>
+											<coverage>0.3</coverage>
+										</li>
+										<li>
+											<def>TM_SurgicalKnife</def>
+											<customLabel>first surgical knife</customLabel>
+											<coverage>0.1</coverage>
+										</li>
+										<li>
+											<def>TM_Claw</def>
+											<customLabel>first claw</customLabel>
+											<coverage>0.6</coverage>
+										</li>
+									</parts>
+								</li>
+							</parts>
+							<groups>
+								<li>TM_SurgicalArm</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>second shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>second arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>second hand</customLabel>
+									<coverage>0.2</coverage>
+									<parts>
+										<li>
+											<def>TM_LaserCutter</def>
+											<customLabel>second laser cutter</customLabel>
+											<coverage>0.3</coverage>
+										</li>
+										<li>
+											<def>TM_SurgicalKnife</def>
+											<customLabel>second surgical knife</customLabel>
+											<coverage>0.1</coverage>
+										</li>
+										<li>
+											<def>TM_Claw</def>
+											<customLabel>second claw</customLabel>
+											<coverage>0.6</coverage>
+										</li>
+									</parts>
+								</li>
+							</parts>
+							<groups>
+								<li>TM_SurgicalArm</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>third shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>third arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>third hand</customLabel>
+									<coverage>0.2</coverage>
+									<parts>
+										<li>
+											<def>TM_LaserCutter</def>
+											<customLabel>third laser cutter</customLabel>
+											<coverage>0.3</coverage>
+										</li>
+										<li>
+											<def>TM_SurgicalKnife</def>
+											<customLabel>third surgical knife</customLabel>
+											<coverage>0.1</coverage>
+										</li>
+										<li>
+											<def>TM_Claw</def>
+											<customLabel>third claw</customLabel>
+											<coverage>0.6</coverage>
+										</li>
+									</parts>
+								</li>
+							</parts>
+							<groups>
+								<li>TM_SurgicalArm</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalShoulder</def>
+					<customLabel>fourth shoulder</customLabel>
+					<coverage>0.05</coverage>
+					<parts>
+						<li>
+							<def>MechanicalArm</def>
+							<customLabel>fourth arm</customLabel>
+							<coverage>0.85</coverage>
+							<parts>
+								<li>
+									<def>MechanicalHand</def>
+									<customLabel>fourth hand</customLabel>
+									<coverage>0.2</coverage>
+									<parts>
+										<li>
+											<def>TM_LaserCutter</def>
+											<customLabel>fourth laser cutter</customLabel>
+											<coverage>0.3</coverage>
+										</li>
+										<li>
+											<def>TM_SurgicalKnife</def>
+											<customLabel>fourth surgical knife</customLabel>
+											<coverage>0.1</coverage>
+										</li>
+										<li>
+											<def>TM_Claw</def>
+											<customLabel>fourth claw</customLabel>
+											<coverage>0.6</coverage>
+										</li>
+									</parts>
+								</li>
+							</parts>
+							<groups>
+								<li>TM_SurgicalArm</li>
+							</groups>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>FluidReprocessor</def>
+					<coverage>0.02</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>TM_Repulsor</def>
+					<height>Bottom</height>
+					<customLabel>repulsor</customLabel>
+					<coverage>0.1</coverage>
+					<depth>outside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

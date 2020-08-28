@@ -2,10 +2,10 @@
 <Defs>
 
 
-  <ThingDef ParentName="BaseMechanoidFlier">
+  <ThingDef ParentName="BaseMechanoidWalker">
     <defName>TM_MechaniteDrone</defName>
-    <label>mechanite_drone</label>
-    <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Fragile on its own, but quite a nuisance in long engagements, especially if protected by other mechanoids.</description>
+    <label>mechanite drone</label>
+    <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
     <tools>
       <li>
         <label>laser cutter</label>
@@ -14,19 +14,27 @@
           <li>Burn</li>
         </capacities>
         <power>12</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>TM_LaserCutter</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
       </li>
       
       <li>
-        <label>Arm</label>
+        <label>surgical knife</label>
         <capacities>
-          <li>Blunt</li>
 		  <li>Cut</li>
         </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>TM_SurgicalKnife</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <label>body</label>
+        <capacities>
+		  <li>Blunt</li>
+        </capacities>
         <power>4</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>BodyAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -37,13 +45,17 @@
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
 				<defToChangeTo>Mech_Pikeman</defToChangeTo>
 			</li>
-			<li Class="Behaviours.CompProperties_Repair">
-				<rateInTicks>30</rateInTicks>
+		    <li Class="Behaviours.CompProperties_Floating">
+			    <isFloater>true</isFloater>
+			    <canCrossWater>true</canCrossWater>
+		    </li>
+			<li Class="Behaviours.CompProperties_GenerateConstructiveMechanites">
+				<rateInTicks>500</rateInTicks>
 			</li>
 		</comps>
     <race>
       <body>TM_MechaniteDroneBody</body>
-      <baseHealthScale>1.0</baseHealthScale>
+      <baseHealthScale>1.5</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
@@ -70,6 +82,10 @@
     <weaponMoney>0~0</weaponMoney>
     <defendPointRadius>0</defendPointRadius>
     <weaponTags>
+		<weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>TM_MechanoidLaserCutter</li>
+		</weaponTags>
     </weaponTags>
   </PawnKindDef>
 
