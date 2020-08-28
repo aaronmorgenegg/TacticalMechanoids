@@ -12,7 +12,7 @@ Belcher:
 	- Stats
 		- Slow-medium speed, Medium tankiness, Short-medium range.
 	- Attacks
-		- AOE toxic sludge attack that does no regular damage, but adds toxic exposure and slows movement.
+		- AOE toxic sludge attack that does no regular damage, but adds toxic exposure, chance of disease/higher infection chances, and slows movement.
 	- Special
 		- Toxic damage and movement speed slow. Disassembles into steel, chemfuel, and neutroamine. Spills sludge on death.
 
@@ -26,7 +26,7 @@ Mechanite Drone:
 	- Attacks
 		- No melee attack, short-ranged laser cutter that works as a makeshift weapon
 	- Special
-		- Heals nearby mechanoids.
+		- Heals nearby mechanoids, or infects nearby colonists with harmful mechanites(either fibrous mechanites or sensory).
 
 Carrier:
 	- Description
@@ -50,7 +50,19 @@ Shredder:
 	- Attacks
 		- High melee damage blades with a bonus chance to remove limbs.
 	- Special
-		- Butchers downed or dead pawns.
+		- Butchers downed or dead pawns, lowering colonist mood
+		
+Dynamo:
+	- Description
+		- A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans, but is particularly effective against turrets.
+	- Appearance
+		- small-medium sized bot with 2 coils on it's back.
+	- Stats
+		- medium speed, low-medium tankiness, medium range.
+	- Attacks
+		- Medium range lightning attack that shocks/stuns living things(like the sky eels), and does EMP damage to turrets.
+	- Special
+		- lightning attack, effective against turrets.
 
 Herald:
 	- Description
@@ -64,7 +76,7 @@ Herald:
 	- Special
 		- Unique sonic weaponry.
 
-Hex:
+Hex: (Archon, Psion,)
 	- Description
 		- A hyper-intelligent mechanoid AI contained within a dense psy-amp lattice. The Hex projects malevolent psionic energies against all biological life.
 	- Appearance
@@ -76,14 +88,23 @@ Hex:
 	- Special
 		- Uses psycasts, disassembles into psycast trainers.
 
-Dynamo:
-	- Description
-		- A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans, but is particularly effective against turrets.
-	- Appearance
-		- small-medium sized bot with 2 coils on it's back.
-	- Stats
-		- medium speed, low-medium tankiness, medium range.
-	- Attacks
-		- Medium range lightning attack that shocks/stuns living things(like the sky eels), and does EMP damage to turrets.
-	- Special
-		- lightning attack, effective against turrets.
+Spider drone(name?):
+	- Idea: a small mechanical spider mechanoid. Fragile, fast, weak melee dps. One death, the legs continue fighting as slow-moving, fragile inchworm mechanoids. Designed to swarm, trigger traps, and distract.
+
+Infiltrator:
+	- Idea: an above-average colonist joins, soon has a mental break where it disables the power grid, hacks turrets/defenses, and starts attacking from within. Turns into an infiltrator mech when pawn is damaged. Triggers a mech raid when this happens.
+
+Acid mech(name?): 
+	- Idea: Short ranged, wide area acid sprayer designed to kill insectoids, used as DPS, sapper, and to melt armor.
+
+Excavator:
+	- Idea: A big drill. Melee DPS, sapper, and burrow raid like infestations but with mechs.
+
+
+
+Events:
+
+Research Team: Researcher/s are fleeing from a nearby mechanoid hive after recovering a hi-tech archotech/mechanoid artifact. They ask for protection and an energy source while they research the artifact, and offer to share their discoveries and technology once they are safe from the mechanoids.
+	- Protect the research team from multiple waves of mechanoids. The research team will periodically draw high amounts of power from your base for their research.
+	- Reward: mechanoid or archotech items, research
+	- Alternative: kill the scientists and steal their artifact, research it yourself at your own pace.
