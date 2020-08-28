@@ -38,7 +38,7 @@
 			    <canCrossWater>true</canCrossWater>
 		    </li>
 			<li Class="TacticalMechanoids.CompProperties_GenerateMechanites">
-				<rateInTicks>500</rateInTicks>
+				<mechaniteSpawnRate>500</mechaniteSpawnRate>
 				<nonMechanoidChance>0.1</nonMechanoidChance>
 			</li>
 		</comps>
