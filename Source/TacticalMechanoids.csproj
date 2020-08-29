@@ -53,6 +53,8 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_GenerateMechanites.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\DefOfs\DefOfs.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\PawnCapacityWorker\PawnCapacityWorker_MechaniteGeneration.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_GenerateMechanites.cs" />

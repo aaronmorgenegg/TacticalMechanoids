@@ -11,11 +11,11 @@ namespace TacticalMechanoids
 {
     public class CompProperties_GenerateMechanites : CompProperties
     {
-        private int mechaniteSpawnRate = 500;
-        private float nonMechanoidChance = 0.1f;
-        private int mechaniteRange = 25;
-        private HediffDef MechanoidMechanitesHediff = HediffDefOf.ConstructiveMechanites;
-        private HediffDef NonMechanoidMechanitesHediff = HediffDefOf.FibrousMechanites;
+        public int mechaniteSpawnRate = 500;
+        public float nonMechanoidChance = 0.1f;
+        public int mechaniteRange = 25;
+        public HediffDef MechanoidMechanitesHediff = HediffDef.Named("TM_ConstructiveMechanites");
+        public HediffDef NonMechanoidMechanitesHediff = HediffDef.Named("FibrousMechanites");
 
         public CompProperties_GenerateMechanites()
         {
