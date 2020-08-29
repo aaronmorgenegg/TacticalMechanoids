@@ -3,3 +3,4 @@ CompProperties_ChangeDef - Create behaviour to disable mechanoid spawns individu
 CompProperties_GenerateMechanites - behaviour to generate repair and disease mechanites, based on canister strength.
 TM_MechaniteSource - Tag for mechanite canister, determines rate of mechanite generation
 TM_MechanoidLaserCutter - Weapon for MechaniteDrone - inherit from VWE - Laser?
+Patchers to add mechanoids to Vanilla and Royalty mechanoid events

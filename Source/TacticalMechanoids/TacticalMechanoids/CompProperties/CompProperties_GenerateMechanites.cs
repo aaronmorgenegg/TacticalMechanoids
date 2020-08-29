@@ -13,6 +13,7 @@ namespace TacticalMechanoids
     {
         private int mechaniteSpawnRate = 500;
         private float nonMechanoidChance = 0.1f;
+        private int mechaniteRange = 25;
         private HediffDef MechanoidMechanitesHediff = HediffDefOf.ConstructiveMechanites;
         private HediffDef NonMechanoidMechanitesHediff = HediffDefOf.FibrousMechanites;
 

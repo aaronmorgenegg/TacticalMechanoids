@@ -1,18 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Reference",
-    "\\Reference\\Alpha Animals",
-    "\\Reference\\Alpha Animals\\1.2",
-    "\\Reference\\Alpha Animals\\1.2\\Defs",
-    "\\Reference\\Alpha Animals\\1.2\\Defs\\ThingDefs_Items",
+    "\\1.2",
+    "\\1.2\\Defs",
+    "\\1.2\\Defs\\HediffDefs",
+    "\\1.2\\Defs\\ThingDefs_Items",
     "\\Source",
-    "\\Textures",
-    "\\Textures\\Items",
-    "\\Textures\\Items\\Weapons",
-    "\\Textures\\Items\\Weapons\\Mechanoid",
-    "\\Textures\\Items\\Weapons\\Mechanoid\\LaserCutter"
+    "\\Source\\TacticalMechanoids",
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids",
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\CompProperties",
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\ThingComps"
   ],
-  "SelectedNode": "\\TODO.txt",
+  "SelectedNode": "\\Source\\TacticalMechanoids\\TacticalMechanoids.sln",
   "PreviewInSolutionExplorer": false
 }
