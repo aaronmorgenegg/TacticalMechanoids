@@ -3,8 +3,8 @@
 <Defs>
 
 	<PawnCapacityDef>
-		<workerClass>TacticalMechanoids.PawnCapacityWorker_MechaniteSource</workerClass>
-		<defName>TM_MechaniteSource</defName>
+		<workerClass>TacticalMechanoids.PawnCapacityWorker_MechaniteGeneration</workerClass>
+		<defName>TM_MechaniteGeneration</defName>
 		<label>mechanite generation</label>
     <listOrder>200</listOrder>
     <lethalFlesh>false</lethalFlesh>

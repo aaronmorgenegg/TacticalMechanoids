@@ -2,3 +2,4 @@ C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Source\obj\Debug\TacticalMech
 C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Source\obj\Debug\TacticalMechanoids.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\Mods\TacticalMechanoids-DEV\Assemblies\ClassLibrary.dll
 C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Source\obj\Debug\ClassLibrary.dll
+C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Assemblies\ClassLibrary.dll

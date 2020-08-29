@@ -29,7 +29,7 @@
         </capacities>
         <power>4</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>BodyAttackTool</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>TM_MechaniteDroneBody</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
@@ -82,12 +82,6 @@
     </lifeStages>
     <weaponMoney>0~0</weaponMoney>
     <defendPointRadius>0</defendPointRadius>
-    <weaponTags>
-		<weaponMoney>9999~9999</weaponMoney>
-		<weaponTags>
-			<li>TM_MechanoidLaserCutter</li>
-		</weaponTags>
-    </weaponTags>
   </PawnKindDef>
 
 

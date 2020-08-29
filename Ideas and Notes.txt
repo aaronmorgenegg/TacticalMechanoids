@@ -98,7 +98,7 @@ Acid mech(name?):
 	- Idea: Short ranged, wide area acid sprayer designed to kill insectoids, used as DPS, sapper, and to melt armor.
 
 Excavator:
-	- Idea: A big drill. Melee DPS, sapper, and burrow raid like infestations but with mechs.
+	- Idea: A big drill. Melee DPS, sapper, and burrow raid like infestations but with mechs. + a combo infestation/mech raid?
 
 
 

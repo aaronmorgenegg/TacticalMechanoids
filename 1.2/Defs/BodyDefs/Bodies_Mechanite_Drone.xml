@@ -20,65 +20,65 @@
 					<parts>
 						<li>
 							<def>ArtificialBrain</def>
-							<coverage>0.05</coverage>
+							<coverage>0.2</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>SightSensor</def>
 							<customLabel>left sight sensor</customLabel>
-							<coverage>0.01</coverage>
+							<coverage>0.1</coverage>
 						</li>
 						<li>
 							<def>SightSensor</def>
 							<customLabel>right sight sensor</customLabel>
-							<coverage>0.01</coverage>
+							<coverage>0.1</coverage>
 						</li>
 						<li>
 							<def>HearingSensor</def>
 							<customLabel>left hearing sensor</customLabel>
-							<coverage>0.01</coverage>
+							<coverage>0.05</coverage>
 						</li>
 						<li>
 							<def>HearingSensor</def>
 							<customLabel>right hearing sensor</customLabel>
-							<coverage>0.01</coverage>
+							<coverage>0.05</coverage>
 						</li>
 						<li>
 							<def>SmellSensor</def>
-							<coverage>0.01</coverage>
+							<coverage>0.05</coverage>
 						</li>
 					</parts>
 				</li>
 				<li>
 					<def>TM_MechaniteCanister</def>
-					<coverage>0.50</coverage>
+					<coverage>0.40</coverage>
 					<groups>
 						<li>BodyAttackTool</li>
 					</groups>
 					<parts>
 						<li>
 							<def>TM_MechaniteLauncher</def>
-							<coverage>0.10</coverage>
+							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>TM_MechaniteBay</def>
-							<coverage>0.10</coverage>
+							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>TM_MechaniteFactory</def>
-							<coverage>0.10</coverage>
+							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>TM_MechaniteReclamator</def>
-							<coverage>0.10</coverage>
+							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 						<li>
 							<def>TM_MaterialsProcessor</def>
-							<coverage>0.10</coverage>
+							<coverage>0.15</coverage>
 							<depth>Inside</depth>
 						</li>
 					</parts>
@@ -111,14 +111,11 @@
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>first claw</customLabel>
-											<coverage>0.6</coverage>
+											<coverage>0.3</coverage>
 										</li>
 									</parts>
 								</li>
 							</parts>
-							<groups>
-								<li>TM_SurgicalArm</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -150,14 +147,11 @@
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>second claw</customLabel>
-											<coverage>0.6</coverage>
+											<coverage>0.3</coverage>
 										</li>
 									</parts>
 								</li>
 							</parts>
-							<groups>
-								<li>TM_SurgicalArm</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -189,14 +183,11 @@
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>third claw</customLabel>
-											<coverage>0.6</coverage>
+											<coverage>0.3</coverage>
 										</li>
 									</parts>
 								</li>
 							</parts>
-							<groups>
-								<li>TM_SurgicalArm</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -228,14 +219,11 @@
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>fourth claw</customLabel>
-											<coverage>0.6</coverage>
+											<coverage>0.3</coverage>
 										</li>
 									</parts>
 								</li>
 							</parts>
-							<groups>
-								<li>TM_SurgicalArm</li>
-							</groups>
 						</li>
 					</parts>
 				</li>
@@ -259,7 +247,7 @@
 					<height>Bottom</height>
 					<customLabel>repulsor</customLabel>
 					<coverage>0.1</coverage>
-					<depth>outside</depth>
+					<depth>Outside</depth>
 				</li>
 			</parts>
 		</corePart>
