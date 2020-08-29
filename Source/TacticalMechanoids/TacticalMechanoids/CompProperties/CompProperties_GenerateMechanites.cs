@@ -8,8 +8,8 @@ namespace TacticalMechanoids
         public int mechaniteSpawnRate = 500;
         public float nonMechanoidChance = 0.1f;
         public int mechaniteRange = 25;
-        public HediffDef MechanoidMechanitesHediff = HediffDef.Named("TM_ConstructiveMechanites");
-        public HediffDef NonMechanoidMechanitesHediff = HediffDef.Named("FibrousMechanites");
+        public string MechanoidMechanitesHediff = "TM_ConstructiveMechanites";
+        public string NonMechanoidMechanitesHediff = "FibrousMechanites";
 
         public CompProperties_GenerateMechanites()
         {

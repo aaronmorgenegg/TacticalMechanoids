@@ -5,7 +5,7 @@ using Verse;
 
 namespace TacticalMechanoids
 {
-    public class CompConstructiveMechanites : ThingComp
+    public class CompConstructiveMechanites : HediffComp
     {
         private int tickCounter = 0;
 
@@ -17,19 +17,18 @@ namespace TacticalMechanoids
             }
         }
 
-        public override void CompTick()
+        public override void CompPostTick(ref float severityAdjustment)
         {
-            base.CompTick();
+            base.CompPostTick(ref severityAdjustment);
             tickCounter++;
 
             if (tickCounter >= this.Props.constructiveMechaniteHealRate)
             {
-                Pawn pawn = this.parent as Pawn;
-                if (pawn.health != null)
+                if (this.parent.pawn.health != null)
                 {
-                    if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    if (this.parent.pawn.health.hediffSet.GetInjuriesTendable() != null && this.parent.pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {
-                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
+                        foreach (Hediff_Injury injury in this.parent.pawn.health.hediffSet.GetInjuriesTendable())
                         {
                             injury.Severity -= this.Props.constructiveMechaniteHealStrength;
                             break;

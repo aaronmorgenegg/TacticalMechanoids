@@ -5,8 +5,8 @@ namespace TacticalMechanoids
 {
     public class CompProperties_Floating : CompProperties
     {
-        private bool isFloater = false;
-        private bool canCrossWater = false;
+        public bool isFloater = false;
+        public bool canCrossWater = false;
 
         public CompProperties_Floating()
         {

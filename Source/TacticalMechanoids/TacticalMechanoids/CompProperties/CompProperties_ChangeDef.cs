@@ -1,6 +1,6 @@
 ﻿using Verse;
 
-namespace TacticalMechanoidsAndEvents
+namespace TacticalMechanoids
 {
     public class CompProperties_ChangeDef : CompProperties
     {

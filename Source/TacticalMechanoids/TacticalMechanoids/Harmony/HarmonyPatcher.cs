@@ -21,7 +21,7 @@ namespace TacticalMechanoids
     {
         static Main()
         {
-            var harmony = new Harmony("com.tacticalmechanoids
+            var harmony = new Harmony("com.tacticalmechanoids");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
 
@@ -92,24 +92,4 @@ namespace TacticalMechanoids
         }
     }
 
-    public static bool DetectTacticalMechanoidsAndOptions(PawnKindDef pawn)
-    {
-        if (pawn != null)
-        {
-            if (pawn.defName.Contains("TM_"))
-            {
-
-                if (pawn.defName.Contains("TM_MechaniteDrone") && TacticalMechanoids_Settings.TM_MechaniteDroneFlag)
-                {
-                    return true;
-                }
-
-                return false;
-
-            }
-            else return false;
-        }
-        else return false;
-
-    }
 }

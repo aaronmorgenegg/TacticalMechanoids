@@ -3,7 +3,7 @@ using UnityEngine;
 using Verse;
 
 
-namespace TacticalMechanoidsAndEvents
+namespace TacticalMechanoids
 {
     public class TacticalMechanoids_Settings : ModSettings
 

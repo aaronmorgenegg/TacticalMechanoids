@@ -4,7 +4,7 @@ using UnityEngine;
 using Verse;
 using Verse.AI.Group;
 
-namespace TacticalMechanoidsAndEvents
+namespace TacticalMechanoids
 {
     public class CompChangeDef : ThingComp
     {
