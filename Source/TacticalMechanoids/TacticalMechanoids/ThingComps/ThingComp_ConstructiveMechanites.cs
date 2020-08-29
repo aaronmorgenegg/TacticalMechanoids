@@ -21,9 +21,9 @@ namespace TacticalMechanoids
             }
         }
 
-        public override Tick()
+        public override void CompTick()
         {
-            base.Tick();
+            base.CompTick();
             tickCounter++;
 
             if (tickCounter >= constructiveMechaniteHealRate)

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<PawnCapacityDef>
+		<workerClass>TacticalMechanoids.PawnCapacityWorker_MechaniteSource</workerClass>
+		<defName>TM_MechaniteSource</defName>
+		<label>mechanite generation</label>
+    <listOrder>200</listOrder>
+    <lethalFlesh>false</lethalFlesh>
+    <showOnMechanoids>true</showOnMechanoids>
+    <minForCapable>0.25</minForCapable>
+	</PawnCapacityDef>
+
+</Defs>

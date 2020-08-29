@@ -3,14 +3,13 @@
     "",
     "\\1.2",
     "\\1.2\\Defs",
-    "\\1.2\\Defs\\HediffDefs",
-    "\\1.2\\Defs\\ThingDefs_Items",
+    "\\1.2\\Defs\\BodyPartDefs",
+    "\\1.2\\Defs\\BodyPartGroupDefs",
     "\\Source",
     "\\Source\\TacticalMechanoids",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids\\CompProperties",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids\\ThingComps"
   ],
-  "SelectedNode": "\\Source\\TacticalMechanoids\\TacticalMechanoids.sln",
   "PreviewInSolutionExplorer": false
 }

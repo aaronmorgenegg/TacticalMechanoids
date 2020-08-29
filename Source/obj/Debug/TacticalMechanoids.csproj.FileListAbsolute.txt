@@ -1,0 +1,2 @@
+C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Source\obj\Debug\TacticalMechanoids.csprojAssemblyReference.cache
+C:\Users\aaron\Documents\GitHub\TacticalMechanoids\Source\obj\Debug\TacticalMechanoids.csproj.CoreCompileInputs.cache

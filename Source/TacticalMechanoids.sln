@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TacticalMechanoids", "TacticalMechanoids.csproj", "{5CE3DCF7-1710-4BD3-B12F-835C3A4BF3B3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CE3DCF7-1710-4BD3-B12F-835C3A4BF3B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE3DCF7-1710-4BD3-B12F-835C3A4BF3B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE3DCF7-1710-4BD3-B12F-835C3A4BF3B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE3DCF7-1710-4BD3-B12F-835C3A4BF3B3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1CA722C9-1522-4165-8FB2-92C05C45B6DB}
+	EndGlobalSection
+EndGlobal

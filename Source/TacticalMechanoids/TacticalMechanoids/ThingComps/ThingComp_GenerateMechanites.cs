@@ -9,7 +9,7 @@ using Verse;
 
 namespace TacticalMechanoids
 {
-    public class GenerateMechanites : ThingDef
+    public class GenerateMechanites : ThingComp
     {
         private int tickCounter = 0;
 
@@ -21,9 +21,9 @@ namespace TacticalMechanoids
             }
         }
 
-        public override Tick()
+        public override void CompTick()
         {
-            base.Tick();
+            base.CompTick();
             tickCounter++;
 
             mechaniteSource = (pawn?.GetStatValue(StatDefOf.TM_MechaniteSource) ?? 0);
