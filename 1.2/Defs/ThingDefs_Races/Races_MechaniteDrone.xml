@@ -2,10 +2,16 @@
 <Defs>
 
 
-  <ThingDef ParentName="BaseMechanoidWalker">
+  <ThingDef ParentName="BaseMechanoid">
     <defName>TM_MechaniteDrone</defName>
     <label>mechanite drone</label>
     <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
+    <statBases>
+    			<MoveSpeed>1.5</MoveSpeed>
+    			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+    			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    			<PsychicSensitivity>0.5</PsychicSensitivity>
+    		</statBases>
     <tools>
       <li>
         <label>surgical knife</label>
@@ -44,24 +50,30 @@
 		</comps>
     <race>
       <body>TM_MechaniteDroneBody</body>
+      <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
     </race>
+    <butcherProducts>
+			<Steel>30</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>TM_MechaniteDrone</defName>
-    <label>mechanite_drone</label>
+    <label>mechanite drone</label>
     <race>TM_MechaniteDrone</race>
     <combatPower>100</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Mechanoid/MechaniteDrone</texPath>
+          <texPath>Mechanoid/MechaniteDrone/mechanite_drone</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.8, 0.4)</volume>
           </shadowData>
@@ -78,6 +90,6 @@
     </weaponTags>
   </PawnKindDef>
 
- 
+
 
 </Defs>
