@@ -38,6 +38,7 @@
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
 				<defToChangeTo>Mech_Pikeman</defToChangeTo>
+        <defToChangeFrom>TM_MechaniteDrone</defToChangeFrom>
 			</li>
 		    <li Class="TacticalMechanoids.CompProperties_Floating">
 			    <isFloater>true</isFloater>
