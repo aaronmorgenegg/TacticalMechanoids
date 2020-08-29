@@ -31,7 +31,7 @@ namespace TacticalMechanoids
                     {
                         foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
                         {
-                            injury.Severity = injury.Severity - this.Props.constructiveMechaniteHealStrength;
+                            injury.Severity -= this.Props.constructiveMechaniteHealStrength;
                             break;
                         }
                     }
