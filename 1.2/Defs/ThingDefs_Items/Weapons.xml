@@ -19,9 +19,10 @@
 	</ThingDef>
 
 
-	<ThingDef ParentName="TM_BaseMechProjectile" Class="TacticalMechanoids.Projectile_SludgeBullet">
+	<ThingDef ParentName="TM_BaseMechProjectile">
 		<defName>TM_SludgeBullet</defName>
 		<label>toxic sludge</label>
+    <thingClass>TacticalMechanoids.Projectile_SludgeBullet</thingClass>
 		<graphicData>
 			<texPath>Items/Weapons/Mechanoid/SludgeCannon/sludge_bullet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

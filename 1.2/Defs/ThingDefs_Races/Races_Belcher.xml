@@ -26,9 +26,9 @@
     </tools>
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
-				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<!-- Change to this pawn if Belcher is disabled in options -->
 				<defToChangeTo>Mech_Centipede</defToChangeTo>
-        <defToChangeFrom>TM_Belchere</defToChangeFrom>
+        <defToChangeFrom>TM_Belcher</defToChangeFrom>
 			</li>
 		</comps>
     <race>
