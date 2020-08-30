@@ -8,8 +8,7 @@
     <description>A simple repair drone. Hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
     <statBases>
     			<MoveSpeed>1.5</MoveSpeed>
-    			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-    			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
     			<PsychicSensitivity>0.5</PsychicSensitivity>
     		</statBases>
     <tools>
@@ -28,7 +27,7 @@
           <li>Blunt</li>
         </capacities>
         <power>4</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>3</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -46,10 +45,11 @@
 		    </li>
 			<li Class="TacticalMechanoids.CompProperties_GenerateMechanites">
 				<mechaniteSpawnRate>500</mechaniteSpawnRate>
-				<nonMechanoidChance>0.1</nonMechanoidChance>
+				<nonMechanoidChance>0.05</nonMechanoidChance>
 			</li>
 		</comps>
     <race>
+      <intelligence>ToolUser</intelligence>
       <body>TM_MechaniteDroneBody</body>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
       <baseBodySize>1.5</baseBodySize>
@@ -58,11 +58,12 @@
 				<li>
 					<def>MechanoidFullyFormed</def>
 					<minAge>0</minAge>
-					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
-					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
-					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
 				</li>
 			</lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
@@ -91,8 +92,6 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <weaponMoney>0~0</weaponMoney>
-    <defendPointRadius>0</defendPointRadius>
   </PawnKindDef>
 
 

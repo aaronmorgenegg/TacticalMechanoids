@@ -9,7 +9,7 @@ namespace TacticalMechanoids
     {
         private int healCounter = 0;
         private float constructiveMechaniteHealStrength = 0.1f;
-        private float constructiveMechaniteHealRate = 30;
+        private float constructiveMechaniteHealRate = 60;
 
         public override void Tick()
         {
