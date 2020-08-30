@@ -71,7 +71,7 @@
 							<depth>Inside</depth>
 						</li>
 						<li>
-							<def>TM_DoublePipeHeatExchanger</def>
+							<def>TM_ChemicalPipes</def>
 							<coverage>0.10</coverage>
 							<depth>Inside</depth>
 						</li>
