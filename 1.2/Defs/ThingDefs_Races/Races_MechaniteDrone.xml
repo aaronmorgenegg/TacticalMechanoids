@@ -8,6 +8,7 @@
     <description>A simple repair drone. Hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
     <statBases>
     			<MoveSpeed>1.5</MoveSpeed>
+    			<ArmorRating_Blunt>0.00</ArmorRating_Blunt>
     			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
     			<PsychicSensitivity>0.5</PsychicSensitivity>
     		</statBases>

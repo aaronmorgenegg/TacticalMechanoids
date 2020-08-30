@@ -1,12 +1,6 @@
-CompProperties_Floating , for MechaniteDrone and Hex.
-CompProperties_ChangeDef - Create behaviour to disable mechanoid spawns individually
-CompProperties_GenerateMechanites - behaviour to generate repair and disease mechanites, based on canister strength.
-TM_MechaniteSource - Tag for mechanite canister, determines rate of mechanite generation
 TM_MechanoidLaserCutter - Weapon for MechaniteDrone - inherit from VWE - Laser?
-Patchers to add mechanoids to Vanilla and Royalty mechanoid events
-
-TODO: Errors:
-	mechaniteDrone doesn't do anything, just stands still?
-		- NullReference in tick somewhere
-	cast invalid in GenerateMEchanites.comptick
-	nonmechanoid message is off - print TM_NonMech....etc.
+Patchers to add mechanoids to mech cluster spawners: https://github.com/juanosarg/AlphaAnimals/blob/master/1.2/Patches/AlphaMechanoidsPatch.xml
+Messages translate aren't working - nonmechanoid message is off - print TM_NonMech....etc.
+	-Options menu looks funky too, might be related
+Add good textures
+add sounds
