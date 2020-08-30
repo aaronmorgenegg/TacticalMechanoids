@@ -18,7 +18,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>12</power>
+        <power>11.7</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -63,7 +63,7 @@
     <defName>TM_Belcher</defName>
     <label>belcher</label>
     <race>TM_Belcher</race>
-    <combatPower>300</combatPower>
+    <combatPower>400</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
@@ -76,6 +76,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>TM_MechanoidSludgeCannon</li>
+		</weaponTags>
   </PawnKindDef>
 
 
