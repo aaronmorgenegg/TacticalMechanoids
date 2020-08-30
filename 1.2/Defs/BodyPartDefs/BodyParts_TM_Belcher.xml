@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<BodyPartDef>
+		<defName>TM_ChemicalVat</defName>
+		<label>chemical vat</label>
+		<hitPoints>50</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_ReactionChamber</defName>
+		<label>reaction chamber</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_DistillationPlant</defName>
+		<label>distillation plant</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_SeriesPumps</defName>
+		<label>series pumps</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_DoublePipeHeatExchanger</defName>
+		<label>double pipe heat exchanger</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_EnvironmentalAnalyzer</defName>
+		<label>environmental analyzer</label>
+		<hitPoints>10</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+	</BodyPartDef>
+
+</Defs>

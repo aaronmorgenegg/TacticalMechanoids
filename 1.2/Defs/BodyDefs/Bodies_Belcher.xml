@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<BodyDef>
+		<defName>TM_BelcherBody</defName>
+		<label>belcher</label>
+		<corePart>
+			<def>MechanicalThorax</def>
+			<height>Bottom</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalHead</def>
+					<height>Bottom</height>
+					<coverage>0.10</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.2</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.05</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>TM_ChemicalVat</def>
+					<coverage>0.40</coverage>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<parts>
+						<li>
+							<def>TM_ReactionChamber</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_DistillationPlant</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_SeriesPumps</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_DoublePipeHeatExchanger</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>TM_EnvironmentalAnalyzer</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>FluidReprocessor</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front left leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>back left leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>front right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>MechanicalLeg</def>
+					<customLabel>back right leg</customLabel>
+					<coverage>0.06</coverage>
+					<height>Bottom</height>
+
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>
