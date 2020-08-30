@@ -24,4 +24,137 @@
 		</stages>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>TM_ToxicSludge</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.4, 0.7, 0.2)</defaultLabelColor>
+		<description>Covered in Toxic Sludge, causing slowed movement, infections, disease, and toxic buildup.</description>
+		<label>toxic sludge</label>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>-0.20</severityPerDayNotImmune>
+			</li>
+			<li Class="HediffCompProperties_Infector">
+				<infectionChance>0.50</infectionChance>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>initial</label>
+			</li>
+			<li>
+				<label>initial</label>
+				<minSeverity>0.04</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<factor>0.90</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_AddSeverity">
+						<hediff>ToxicBuildup</hediff>
+						<severityAmount>0.01</severityAmount>
+						<mtbHours>8</mtbHours>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>minor</label>
+				<minSeverity>0.2</minSeverity>
+				<vomitMtbDays>2</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<factor>0.80</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_AddSeverity">
+						<hediff>ToxicBuildup</hediff>
+						<severityAmount>0.01</severityAmount>
+						<mtbHours>4</mtbHours>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>moderate</label>
+				<minSeverity>0.40</minSeverity>
+				<vomitMtbDays>1</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<factor>0.70</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>146</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_AddSeverity">
+						<hediff>ToxicBuildup</hediff>
+						<severityAmount>0.01</severityAmount>
+						<mtbHours>2</mtbHours>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>serious</label>
+				<minSeverity>0.60</minSeverity>
+				<vomitMtbDays>0.5</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<factor>0.50</offset>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>37</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Plague</hediff>
+						<mtbDays>146</mtbDays>
+					</li>
+					<li Class="HediffGiver_AddSeverity">
+						<hediff>ToxicBuildup</hediff>
+						<severityAmount>0.01</severityAmount>
+						<mtbHours>1</mtbHours>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<label>extreme</label>
+				<minSeverity>0.80</minSeverity>
+				<vomitMtbDays>0.25</vomitMtbDays>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.10</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>Plague</hediff>
+						<mtbDays>37</mtbDays>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>Flu</hediff>
+						<mtbDays>17</mtbDays>
+					</li>
+					<li Class="HediffGiver_AddSeverity">
+						<hediff>ToxicBuildup</hediff>
+						<severityAmount>0.01</severityAmount>
+						<mtbHours>0.5</mtbHours>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
 </Defs>
