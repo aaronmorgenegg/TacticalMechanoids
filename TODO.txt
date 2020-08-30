@@ -7,5 +7,6 @@ Patchers to add mechanoids to Vanilla and Royalty mechanoid events
 
 TODO: Errors:
 	mechaniteDrone doesn't do anything, just stands still?
-	NonMechanoidInfected message displays label, not message.
-	
+		- NullReference in tick somewhere
+	cast invalid in GenerateMEchanites.comptick
+	nonmechanoid message is off - print TM_NonMech....etc.

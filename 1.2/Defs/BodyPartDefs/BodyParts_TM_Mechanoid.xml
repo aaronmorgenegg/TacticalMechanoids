@@ -86,7 +86,7 @@
 	</BodyPartDef>
 
 	<BodyPartDef>
-		<defName>TM_SurgicalKnife</defName>
+		<defName>TM_SurgicalBlade</defName>
 		<label>body</label>
 		<hitPoints>1</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>

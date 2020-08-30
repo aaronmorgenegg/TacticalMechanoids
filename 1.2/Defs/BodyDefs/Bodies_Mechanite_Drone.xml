@@ -52,9 +52,6 @@
 				<li>
 					<def>TM_MechaniteCanister</def>
 					<coverage>0.40</coverage>
-					<groups>
-						<li>BodyAttackTool</li>
-					</groups>
 					<parts>
 						<li>
 							<def>TM_MechaniteLauncher</def>
@@ -104,8 +101,11 @@
 											<coverage>0.3</coverage>
 										</li>
 										<li>
-											<def>TM_SurgicalKnife</def>
+											<def>TM_SurgicalBlade</def>
 											<customLabel>first surgical knife</customLabel>
+											<groups>
+												<li>TM_SurgicalBlades</li>
+											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
@@ -140,8 +140,11 @@
 											<coverage>0.3</coverage>
 										</li>
 										<li>
-											<def>TM_SurgicalKnife</def>
+											<def>TM_SurgicalBlade</def>
 											<customLabel>second surgical knife</customLabel>
+											<groups>
+												<li>TM_SurgicalBlades</li>
+											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
@@ -176,8 +179,11 @@
 											<coverage>0.3</coverage>
 										</li>
 										<li>
-											<def>TM_SurgicalKnife</def>
+											<def>TM_SurgicalBlade</def>
 											<customLabel>third surgical knife</customLabel>
+											<groups>
+												<li>TM_SurgicalBlades</li>
+											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
@@ -212,8 +218,11 @@
 											<coverage>0.3</coverage>
 										</li>
 										<li>
-											<def>TM_SurgicalKnife</def>
+											<def>TM_SurgicalBlade</def>
 											<customLabel>fourth surgical knife</customLabel>
+											<groups>
+												<li>TM_SurgicalBlades</li>
+											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>

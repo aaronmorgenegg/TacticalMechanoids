@@ -22,34 +22,31 @@ namespace TacticalMechanoids
             base.CompTick();
             tickCounter++;
             Pawn pawn = this.parent as Pawn;
-            float mechaniteGeneration = (pawn?.health.capacities.GetLevel(PawnCapacityDefOf.TM_MechaniteGeneration) ?? 0);
-            bool isAwake = pawn?.TryGetComp<CompCanBeDormant>().Awake ?? false;
-            if (mechaniteGeneration > 0 && isAwake && tickCounter >= (this.Props.mechaniteSpawnRate / mechaniteGeneration))
+            if (pawn != null && pawn.health != null)
             {
-                if (pawn.health != null)
+                float mechaniteGeneration = pawn.health.capacities.GetLevel(PawnCapacityDefOf.TM_MechaniteGeneration);
+                bool isAwake = !pawn.Dead && !pawn.Downed && pawn.Map != null && pawn.TryGetComp<CompCanBeDormant>().Awake;
+                if (mechaniteGeneration > 0 && isAwake && tickCounter >= (this.Props.mechaniteSpawnRate / mechaniteGeneration))
                 {
-                    List<Pawn> pawns = pawn.Map.mapPawns.AllPawnsSpawned;
-                    for (int i = 0; i < pawns.Count; i++)
+                    foreach (Thing thing in GenRadial.RadialDistinctThingsAround(pawn.Position, pawn.Map, Props.mechaniteRange, true))
                     {
-                        if (pawns[i] != null && pawns[i].RaceProps.IsMechanoid && pawns[i].health != null && pawns[i].health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null && 
-                            pawn.Position.DistanceTo(pawns[i].Position) <= this.Props.mechaniteRange)
+                        Pawn targetPawn = thing as Pawn;
+                        if (targetPawn != null && targetPawn.RaceProps.IsMechanoid && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null)
                         {
-                            Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named(this.Props.MechanoidMechanitesHediff), pawns[i], null);
-                            pawns[i].health.AddHediff(hediff, null, null);
+                            targetPawn.health.AddHediff(HediffDef.Named(this.Props.MechanoidMechanitesHediff), null, null);
                             break;
                         }
-                        if (pawns[i] != null && pawns[i].RaceProps.Humanlike && pawns[i].health != null && pawns[i].health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
-                            pawn.Position.DistanceTo(pawns[i].Position) <= this.Props.mechaniteRange && Rand.Value <= this.Props.nonMechanoidChance)
+                        if (targetPawn != null && targetPawn.RaceProps.Humanlike && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
+                            Rand.Value <= this.Props.nonMechanoidChance)
                         {
-                            Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff), pawns[i], null);
-                            pawns[i].health.AddHediff(hediff, null, null);
-                            string message = TranslatorFormattedStringExtensions.Translate("TM_NonMechanoidContractedMechanites", pawns[i].Label, pawn.Label);
+                            targetPawn.health.AddHediff(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff), null, null);
+                            string message = "TM_NonMechanoidContractedMechanites".Translate(targetPawn.Label, pawn.Label);
                             Messages.Message(message, MessageTypeDefOf.NegativeEvent);
                             break;
                         }
                     }
+                    tickCounter = 0;
                 }
-                tickCounter = 0;
             }
         }
     }

@@ -5,7 +5,7 @@ namespace TacticalMechanoids
 {
     public class CompProperties_GenerateMechanites : CompProperties
     {
-        public int mechaniteSpawnRate = 500;
+        public int mechaniteSpawnRate = 100;
         public float nonMechanoidChance = 0.1f;
         public int mechaniteRange = 25;
         public string MechanoidMechanitesHediff = "TM_ConstructiveMechanites";

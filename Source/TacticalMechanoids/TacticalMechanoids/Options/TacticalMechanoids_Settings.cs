@@ -35,7 +35,7 @@ namespace TacticalMechanoids
         {
             if (def_name == "TM_MechaniteDrone")
             {
-                return TM_MechaniteDroneFlag;
+                return !TM_MechaniteDroneFlag;
             }
 
             Log.Warning("MechanoidIsEnabled({}) found no matching def_name. Returning false, but this means you misnamed something somewhere.");

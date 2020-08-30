@@ -14,22 +14,22 @@
     		</statBases>
     <tools>
       <li>
-        <label>surgical knife</label>
+        <label>surgical blade</label>
         <capacities>
-		  <li>Cut</li>
+	        <li>Cut</li>
         </capacities>
         <power>8</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>TM_SurgicalKnife</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>TM_SurgicalBlades</linkedBodyPartsGroup>
       </li>
       <li>
-        <label>body</label>
+        <label>head</label>
         <capacities>
-		  <li>Blunt</li>
+          <li>Blunt</li>
         </capacities>
         <power>4</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>MechanicalThorax</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>

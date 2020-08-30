@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<BodyPartGroupDef>
+    <defName>TM_SurgicalBlades</defName>
+    <label>surgical blades</label>
+    <labelShort>surgical blade</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>
