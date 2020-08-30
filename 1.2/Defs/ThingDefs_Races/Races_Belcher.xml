@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>TM_Belcher</defName>
+    <label>belcher</label>
+    <description>A hulking mechanoid whose body is a veritable chemistry lab. Equipped for terraforming planets as well as chemical warfare, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.</description>
+    <statBases>
+    			<MoveSpeed>2.0</MoveSpeed>
+    			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+    			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    			<PsychicSensitivity>0.5</PsychicSensitivity>
+    		</statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+	<comps>
+			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
+				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<defToChangeTo>Mech_Centipede</defToChangeTo>
+        <defToChangeFrom>TM_Belchere</defToChangeFrom>
+			</li>
+		</comps>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <body>TM_BelcherBody</body>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>2.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+      <lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			<Steel>50</Steel>
+			<Plasteel>10</Plasteel>
+			<Chemfuel>50</Chemfuel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>TM_Belcher</defName>
+    <label>belcher</label>
+    <race>TM_Belcher</race>
+    <combatPower>300</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Mechanoid/belcher/belcher</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>2.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>

@@ -3,12 +3,12 @@
     "",
     "\\1.2",
     "\\1.2\\Defs",
-    "\\1.2\\Defs\\HediffDefs",
     "\\1.2\\Defs\\PawnCapacityDefs",
     "\\Source",
     "\\Source\\TacticalMechanoids",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids\\DefOfs",
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\Options",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids\\PawnCapacityWorker"
   ],
   "SelectedNode": "\\Source\\TacticalMechanoids.sln",
