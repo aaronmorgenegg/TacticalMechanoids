@@ -65,7 +65,7 @@
   	</ThingDef>
 
 
-  	<ThingDef ParentName="AA_BaseMechProjectile">
+  	<ThingDef ParentName="AA_BaseMechProjectile" Class="TacticalMechanoids.Projectile_SludgeBullet">
   		<defName>TM_SludgeBullet</defName>
   		<label>toxic sludge</label>
   		<graphicData>
@@ -77,7 +77,7 @@
   		<projectile>
   			<speed>40</speed>
   			<damageDef>Burn</damageDef>
-  			<damageAmountBase>0</damageAmountBase>
+  			<damageAmountBase>2</damageAmountBase>
   			<explosionRadius>2</explosionRadius>
   			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
   			<preExplosionSpawnChance>1.0</preExplosionSpawnChance>
