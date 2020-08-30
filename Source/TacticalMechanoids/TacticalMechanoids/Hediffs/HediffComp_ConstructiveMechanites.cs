@@ -5,46 +5,31 @@ using Verse;
 
 namespace TacticalMechanoids
 {
-    public class HediffCompConstructiveMechanites : HediffComp
+    public class HediffCompConstructiveMechanites : HediffWithComps
     {
         private int healCounter = 0;
-        private int durationCounter = 0;
+        private float constructiveMechaniteHealStrength = 0.1f;
+        private float constructiveMechaniteHealRate = 30;
 
-        public HediffCompProperties_ConstructiveMechanites Props
+        public override void Tick()
         {
-            get
-            {
-                return (HediffCompProperties_ConstructiveMechanites)this.props;
-            }
-        }
-
-        public override void CompPostTick(ref float severityAdjustment)
-        {
-            base.CompPostTick(ref severityAdjustment);
+            base.Tick();
             healCounter++;
-            //durationCounter++;
 
-            if (healCounter >= this.Props.constructiveMechaniteHealRate)
+            if (healCounter >= constructiveMechaniteHealRate)
             {
-                if (this.parent.pawn.health != null)
+                if (pawn.health != null)
                 {
-                    if (this.parent.pawn.health.hediffSet.GetInjuriesTendable() != null && this.parent.pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
+                    if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {
-                        foreach (Hediff_Injury injury in this.parent.pawn.health.hediffSet.GetInjuriesTendable())
+                        foreach (Hediff_Injury injury in pawn.health.hediffSet.GetInjuriesTendable())
                         {
-                            injury.Severity -= this.Props.constructiveMechaniteHealStrength;
+                            injury.Severity -= constructiveMechaniteHealStrength;
                             break;
                         }
                     }
                 }
-                healCounter = 0; // TODO: Constructive MEchanites has comps, needs to inherit from HediffWithcomps or get rid of comps?
             }
-
-            /*if (durationCounter >= this.Props.constructiveMechaniteDuration)
-            {
-                TODO: May not need this.
-                TODO: End hediff effect.
-            }*/
         }
     }
 }

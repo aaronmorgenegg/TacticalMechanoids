@@ -9,6 +9,14 @@
 		<defaultLabelColor>(0,0.8,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>500</min>
+					<max>1500</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
 		<stages>
 			<li>
 

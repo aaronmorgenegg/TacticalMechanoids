@@ -21,7 +21,7 @@ namespace TacticalMechanoids
         {
             base.CompTick();
             tickCounter++;
-            if (this != null && this.parent is Pawn pawn && pawn != null & pawn.health != null)
+            if (this.parent is Pawn pawn && pawn != null & pawn.health != null)
             {
                 float mechaniteGeneration = pawn.health.capacities.GetLevel(PawnCapacityDefOf.TM_MechaniteGeneration);
                 bool isAwake = !pawn.Dead && !pawn.Downed && pawn.Map != null && pawn.TryGetComp<CompCanBeDormant>().Awake;

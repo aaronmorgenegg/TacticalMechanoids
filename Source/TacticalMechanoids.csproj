@@ -59,7 +59,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffCompProperties_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_GenerateMechanites.cs" />
