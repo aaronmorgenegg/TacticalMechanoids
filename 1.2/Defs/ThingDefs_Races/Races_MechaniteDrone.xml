@@ -5,7 +5,7 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>TM_MechaniteDrone</defName>
     <label>mechanite drone</label>
-    <description>A simple repair mechanoid that hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
+    <description>A simple repair drone. Hosts a swarm of constructive mechanites that repair nearby mechanoids. Equipped with surgical laser cutters and scalpels that make acceptable weapons. Fragile on its own, but quite a nuisance in long engagements if accompanied by other mechanoids.</description>
     <statBases>
     			<MoveSpeed>1.5</MoveSpeed>
     			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -51,6 +51,7 @@
 		</comps>
     <race>
       <body>TM_MechaniteDroneBody</body>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <lifeStageAges>
