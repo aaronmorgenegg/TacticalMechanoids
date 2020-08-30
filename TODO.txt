@@ -4,3 +4,4 @@ Messages translate aren't working - nonmechanoid message is off - print TM_NonMe
 	-Options menu looks funky too, might be related
 Add good textures
 add sounds
+Add Dubs Hygiene compapibility - washing removes ToxicSludge

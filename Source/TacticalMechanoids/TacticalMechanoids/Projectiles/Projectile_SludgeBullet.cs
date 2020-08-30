@@ -33,7 +33,7 @@ namespace TacticalMechanoids
                             targetPawn.health.AddHediff(hediff, null, null);
                         }
                         Hediff targetPawnToxicBuildupHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ToxicBuildup"));
-                        float toxicBuildupSeverity = Rand.Range(0.01f, 0.1f);
+                        float toxicBuildupSeverity = Rand.Range(0.03f, 0.15f);
                         if (targetPawnToxicBuildupHediff != null)
                         {
                             targetPawnToxicBuildupHediff.Severity += toxicBuildupSeverity;

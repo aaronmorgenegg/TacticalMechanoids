@@ -32,12 +32,7 @@
 		<label>toxic sludge</label>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.25</severityPerDayNotImmune>
-			</li>
-			<li Class="HediffCompProperties_TendDuration">
-				<baseTendDurationHours>12</baseTendDurationHours>
-				<disappearsAtTotalTendQuality>0.50</disappearsAtTotalTendQuality>
-				<severityPerDayTended>-0.50</severityPerDayTended>
+				<severityPerDayNotImmune>-0.75</severityPerDayNotImmune>
 			</li>
 		</comps>
 
