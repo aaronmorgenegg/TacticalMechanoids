@@ -68,6 +68,7 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_SettingsController.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\PawnCapacityWorker\PawnCapacityWorker_MechaniteGeneration.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_SludgeBullet.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_GenerateMechanites.cs" />

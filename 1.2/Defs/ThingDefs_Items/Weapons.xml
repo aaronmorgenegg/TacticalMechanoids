@@ -1,89 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="BaseGunWithQuality" Name="TM_MechanoidSludgeCannon">
-  		<label>sludge cannon</label>
-  		<weaponTags>
-  			<li>TM_MechanoidSludgeCannon</li>
-  		</weaponTags>
-  		<description>A toxic sludge cannon. Fires globs of toxic sludge that slows movement.</description>
-  		<graphicData>
-  			<texPath>Items/Weapons/Mechanoid/SludgeCannon/sludge_cannon</texPath>
-  			<graphicClass>Graphic_Single</graphicClass>
-  		</graphicData>
-  		<statBases>
-  			<MarketValue>2000</MarketValue>
-  			<Mass>18</Mass>
-  			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-  		</statBases>
-  		<techLevel>Spacer</techLevel>
-  		<menuHidden>True</menuHidden>
-  		<generateCommonality>0.5</generateCommonality>
-  		<tradeability>None</tradeability>
-      <verbs>
-        <li>
-
-          <verbClass>Verb_Shoot</verbClass>
-          <hasStandardCommand>true</hasStandardCommand>
-          <defaultProjectile>TM_SludgeBullet</defaultProjectile>
-          <forcedMissRadius>2</forcedMissRadius>
-          <warmupTime>0.3</warmupTime>
-          <range>12</range>
-          <burstShotCount>1</burstShotCount>
-          <soundCast>TM_SludgeCannon</soundCast>
-          <muzzleFlashScale>1</muzzleFlashScale>
-
-        </li>
-      </verbs>
-  		<tools>
-  			<li>
-  				<label>barrel</label>
-  				<capacities>
-  					<li>Blunt</li>
-  				</capacities>
-  				<power>11.7</power>
-  				<cooldownTime>2.6</cooldownTime>
-  			</li>
-  		</tools>
-  	</ThingDef>
-
-  	<ThingDef Name="AA_BaseMechProjectile" Abstract="True">
-  		<category>Projectile</category>
-  		<altitudeLayer>Projectile</altitudeLayer>
-  		<thingClass>Projectile_Explosive</thingClass>
-  		<label>projectile</label>
-  		<tickerType>Normal</tickerType>
-  		<useHitPoints>False</useHitPoints>
-  		<neverMultiSelect>True</neverMultiSelect>
-  		<graphicData>
-  			<shaderType>Transparent</shaderType>
-  		</graphicData>
-  		<projectile>
-  			<speed>15</speed>
-  			<flyOverhead>true</flyOverhead>
-  		</projectile>
-  	</ThingDef>
+	<ThingDef Name="TM_BaseMechProjectile" Abstract="True">
+		<category>Projectile</category>
+		<altitudeLayer>Projectile</altitudeLayer>
+		<thingClass>Projectile_Explosive</thingClass>
+		<label>projectile</label>
+		<tickerType>Normal</tickerType>
+		<useHitPoints>False</useHitPoints>
+		<neverMultiSelect>True</neverMultiSelect>
+		<graphicData>
+	    <shaderType>Transparent</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>15</speed>
+			<flyOverhead>true</flyOverhead>
+		</projectile>
+	</ThingDef>
 
 
-  	<ThingDef ParentName="AA_BaseMechProjectile" Class="TacticalMechanoids.Projectile_SludgeBullet">
-  		<defName>TM_SludgeBullet</defName>
-  		<label>toxic sludge</label>
-  		<graphicData>
-  			<texPath>Items/Weapons/Mechanoid/SludgeCannon/sludge_bullet</texPath>
-  			<graphicClass>Graphic_Single</graphicClass>
-  			<shaderType>TransparentPostLight</shaderType>
-  		</graphicData>
-  		<thingClass>Projectile_Explosive</thingClass>
-  		<projectile>
-  			<speed>40</speed>
-  			<damageDef>Burn</damageDef>
-  			<damageAmountBase>2</damageAmountBase>
-  			<explosionRadius>2</explosionRadius>
-  			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
-  			<preExplosionSpawnChance>1.0</preExplosionSpawnChance>
-  			<soundExplode>TM_SludgeCannon</soundExplode>
+	<ThingDef ParentName="TM_BaseMechProjectile" Class="TacticalMechanoids.Projectile_SludgeBullet">
+		<defName>TM_SludgeBullet</defName>
+		<label>toxic sludge</label>
+		<graphicData>
+			<texPath>Items/Weapons/Mechanoid/SludgeCannon/sludge_bullet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<speed>40</speed>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>2</damageAmountBase>
+			<explosionRadius>2</explosionRadius>
+			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
+			<preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+			<soundExplode>TM_SludgeCannon</soundExplode>
 
-  		</projectile>
-  	</ThingDef>
+		</projectile>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseGunWithQuality">
+    <defName>TM_MechanoidSludgeCannon</defName>
+		<label>sludge cannon</label>
+		<weaponTags>
+			<li>TM_MechanoidSludgeCannon</li>
+		</weaponTags>
+		<description>A toxic sludge cannon. Fires globs of toxic sludge that slows movement.</description>
+		<graphicData>
+			<texPath>Items/Weapons/Mechanoid/SludgeCannon/sludge_cannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>18</Mass>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<menuHidden>True</menuHidden>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+    <verbs>
+      <li>
+
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>TM_SludgeBullet</defaultProjectile>
+        <forcedMissRadius>2</forcedMissRadius>
+        <warmupTime>0.3</warmupTime>
+        <range>12</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>TM_SludgeCannon</soundCast>
+        <muzzleFlashScale>1</muzzleFlashScale>
+
+      </li>
+    </verbs>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
 
 </Defs>

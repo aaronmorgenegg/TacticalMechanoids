@@ -34,21 +34,20 @@
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-0.20</severityPerDayNotImmune>
 			</li>
-			<li Class="HediffCompProperties_Infector">
+			<li Class="HediffCompProperties_Infecter">
 				<infectionChance>0.50</infectionChance>
 			</li>
 		</comps>
+
 		<stages>
+
 			<li>
 				<label>initial</label>
-			</li>
-			<li>
-				<label>initial</label>
-				<minSeverity>0.04</minSeverity>
+				<minSeverity>0.00</minSeverity>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<factor>0.90</offset>
+						<postFactor>0.90</postFactor>
 					</li>
 				</capMods>
 				<hediffGivers>
@@ -59,6 +58,7 @@
 					</li>
 				</hediffGivers>
 			</li>
+
 			<li>
 				<label>minor</label>
 				<minSeverity>0.2</minSeverity>
@@ -66,7 +66,7 @@
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<factor>0.80</offset>
+						<postFactor>0.80</postFactor>
 					</li>
 				</capMods>
 				<hediffGivers>
@@ -77,6 +77,7 @@
 					</li>
 				</hediffGivers>
 			</li>
+
 			<li>
 				<label>moderate</label>
 				<minSeverity>0.40</minSeverity>
@@ -84,16 +85,13 @@
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<factor>0.70</offset>
+						<postFactor>0.70</postFactor>
 					</li>
 				</capMods>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>Flu</hediff>
 						<mtbDays>146</mtbDays>
-						<partsToAffect>
-							<li>Brain</li>
-						</partsToAffect>
 					</li>
 					<li Class="HediffGiver_AddSeverity">
 						<hediff>ToxicBuildup</hediff>
@@ -102,6 +100,7 @@
 					</li>
 				</hediffGivers>
 			</li>
+
 			<li>
 				<label>serious</label>
 				<minSeverity>0.60</minSeverity>
@@ -109,7 +108,7 @@
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<factor>0.50</offset>
+						<postFactor>0.50</postFactor>
 					</li>
 				</capMods>
 				<hediffGivers>
@@ -128,6 +127,7 @@
 					</li>
 				</hediffGivers>
 			</li>
+
 			<li>
 				<label>extreme</label>
 				<minSeverity>0.80</minSeverity>
@@ -154,6 +154,7 @@
 					</li>
 				</hediffGivers>
 			</li>
+
 		</stages>
 	</HediffDef>
 

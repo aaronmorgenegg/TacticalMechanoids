@@ -67,7 +67,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Mechanoid/belcher/belcher</texPath>
+          <texPath>Mechanoid/Belcher/belcher</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>2.0</drawSize>
           <shadowData>

@@ -6,7 +6,7 @@ using Verse.AI.Group;
 
 namespace TacticalMechanoids
 {
-    public class Projectile_SludgeBullet : Bullet
+    public class Projectile_SludgeBullet : Projectile_Explosive
     {
 
         protected override void Impact(Thing hitThing)
