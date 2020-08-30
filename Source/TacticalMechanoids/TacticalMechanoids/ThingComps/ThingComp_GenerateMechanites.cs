@@ -21,8 +21,7 @@ namespace TacticalMechanoids
         {
             base.CompTick();
             tickCounter++;
-            Pawn pawn = this.parent as Pawn;
-            if (pawn != null && pawn.health != null)
+            if (this != null && this.parent is Pawn pawn && pawn != null & pawn.health != null)
             {
                 float mechaniteGeneration = pawn.health.capacities.GetLevel(PawnCapacityDefOf.TM_MechaniteGeneration);
                 bool isAwake = !pawn.Dead && !pawn.Downed && pawn.Map != null && pawn.TryGetComp<CompCanBeDormant>().Awake;
@@ -30,14 +29,14 @@ namespace TacticalMechanoids
                 {
                     foreach (Thing thing in GenRadial.RadialDistinctThingsAround(pawn.Position, pawn.Map, Props.mechaniteRange, true))
                     {
-                        if (thing != null && thing is Pawn targetPawn)
+                        if (thing != null && thing is Pawn targetPawn && targetPawn.health != null)
                         {
-                            if (targetPawn.RaceProps.IsMechanoid && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null)
+                            if (targetPawn.RaceProps.IsMechanoid && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null)
                             {
                                 targetPawn.health.AddHediff(HediffDef.Named(this.Props.MechanoidMechanitesHediff), null, null);
                                 break;
                             }
-                            if (targetPawn.RaceProps.Humanlike && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
+                            if (targetPawn.RaceProps.Humanlike && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
                                 Rand.Value <= this.Props.nonMechanoidChance)
                             {
                                 targetPawn.health.AddHediff(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff), null, null);
