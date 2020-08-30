@@ -30,20 +30,23 @@ namespace TacticalMechanoids
                 {
                     foreach (Thing thing in GenRadial.RadialDistinctThingsAround(pawn.Position, pawn.Map, Props.mechaniteRange, true))
                     {
-                        Pawn targetPawn = thing as Pawn;
-                        if (targetPawn != null && targetPawn.RaceProps.IsMechanoid && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null)
+                        if (thing != null && thing is Pawn targetPawn)
                         {
-                            targetPawn.health.AddHediff(HediffDef.Named(this.Props.MechanoidMechanitesHediff), null, null);
-                            break;
+                            if (targetPawn.RaceProps.IsMechanoid && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.MechanoidMechanitesHediff)) == null)
+                            {
+                                targetPawn.health.AddHediff(HediffDef.Named(this.Props.MechanoidMechanitesHediff), null, null);
+                                break;
+                            }
+                            if (targetPawn.RaceProps.Humanlike && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
+                                Rand.Value <= this.Props.nonMechanoidChance)
+                            {
+                                targetPawn.health.AddHediff(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff), null, null);
+                                string message = "TM_NonMechanoidContractedMechanites".Translate(targetPawn.Label, pawn.Label);
+                                Messages.Message(message, MessageTypeDefOf.NegativeEvent);
+                                break;
+                            }
                         }
-                        if (targetPawn != null && targetPawn.RaceProps.Humanlike && targetPawn.health != null && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff)) == null &&
-                            Rand.Value <= this.Props.nonMechanoidChance)
-                        {
-                            targetPawn.health.AddHediff(HediffDef.Named(this.Props.NonMechanoidMechanitesHediff), null, null);
-                            string message = "TM_NonMechanoidContractedMechanites".Translate(targetPawn.Label, pawn.Label);
-                            Messages.Message(message, MessageTypeDefOf.NegativeEvent);
-                            break;
-                        }
+                        
                     }
                     tickCounter = 0;
                 }

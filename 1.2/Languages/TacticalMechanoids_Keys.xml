@@ -2,5 +2,5 @@
 
 <LanguageData>
 	<TM_NonMechanoidContractedMechanites>{0} has contracted painful mechanites from {1}!</TM_NonMechanoidContractedMechanites>
-	<TM_disableMechaniteDrone>Disable Mechanite Drone Spawns</TM_disableMechaniteDrone>
+	<TM_enableMechaniteDrone>Enable Mechanite Drone Spawns</TM_enableMechaniteDrone>
 </LanguageData>
