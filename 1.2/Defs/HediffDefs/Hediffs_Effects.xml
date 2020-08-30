@@ -28,14 +28,11 @@
 		<defName>TM_ToxicSludge</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.4, 0.7, 0.2)</defaultLabelColor>
-		<description>Covered in Toxic Sludge, causing slowed movement, infections, disease, and toxic buildup.</description>
+		<description>Covered in Toxic Sludge, causing slowed movement, disease, and toxic buildup.</description>
 		<label>toxic sludge</label>
 		<comps>
 			<li Class="HediffCompProperties_Immunizable">
 				<severityPerDayNotImmune>-0.20</severityPerDayNotImmune>
-			</li>
-			<li Class="HediffCompProperties_Infecter">
-				<infectionChance>0.50</infectionChance>
 			</li>
 		</comps>
 
@@ -50,13 +47,6 @@
 						<postFactor>0.90</postFactor>
 					</li>
 				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_AddSeverity">
-						<hediff>ToxicBuildup</hediff>
-						<severityAmount>0.01</severityAmount>
-						<mtbHours>8</mtbHours>
-					</li>
-				</hediffGivers>
 			</li>
 
 			<li>
@@ -69,13 +59,6 @@
 						<postFactor>0.80</postFactor>
 					</li>
 				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_AddSeverity">
-						<hediff>ToxicBuildup</hediff>
-						<severityAmount>0.01</severityAmount>
-						<mtbHours>4</mtbHours>
-					</li>
-				</hediffGivers>
 			</li>
 
 			<li>
@@ -93,12 +76,6 @@
 						<hediff>Flu</hediff>
 						<mtbDays>146</mtbDays>
 					</li>
-					<li Class="HediffGiver_AddSeverity">
-						<hediff>ToxicBuildup</hediff>
-						<severityAmount>0.01</severityAmount>
-						<mtbHours>2</mtbHours>
-					</li>
-				</hediffGivers>
 			</li>
 
 			<li>
@@ -120,11 +97,6 @@
 						<hediff>Plague</hediff>
 						<mtbDays>146</mtbDays>
 					</li>
-					<li Class="HediffGiver_AddSeverity">
-						<hediff>ToxicBuildup</hediff>
-						<severityAmount>0.01</severityAmount>
-						<mtbHours>1</mtbHours>
-					</li>
 				</hediffGivers>
 			</li>
 
@@ -145,12 +117,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>Flu</hediff>
-						<mtbDays>17</mtbDays>
-					</li>
-					<li Class="HediffGiver_AddSeverity">
-						<hediff>ToxicBuildup</hediff>
-						<severityAmount>0.01</severityAmount>
-						<mtbHours>0.5</mtbHours>
+						<mtbDays>7</mtbDays>
 					</li>
 				</hediffGivers>
 			</li>

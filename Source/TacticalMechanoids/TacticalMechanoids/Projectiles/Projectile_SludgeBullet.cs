@@ -9,24 +9,42 @@ namespace TacticalMechanoids
     public class Projectile_SludgeBullet : Projectile_Explosive
     {
 
-        protected override void Impact(Thing hitThing)
+        protected override void Explode()
         {
-            base.Impact(hitThing);
+            Map map = base.Map;
+            base.Explode();
 
-            if (hitThing is Pawn targetPawn && targetPawn != null && targetPawn.health != null && targetPawn.RaceProps.IsFlesh) 
+            if (base.Position != null && map != null)
             {
-
-                Hediff targetPawnToxicSludgeHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("TM_ToxicSludge"));
-                float randomSeverity = Rand.Range(0.15f, 0.30f);
-                if (targetPawnToxicSludgeHediff != null)
+                foreach (Thing hitThing in GenRadial.RadialDistinctThingsAround(base.Position, map, base.def.projectile.explosionRadius, true))
                 {
-                    targetPawnToxicSludgeHediff.Severity += randomSeverity;
-                }
-                else
-                {
-                    Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named("TM_ToxicSludge"), targetPawn, null);
-                    hediff.Severity = randomSeverity;
-                    targetPawn.health.AddHediff(hediff, null, null);
+                    if (hitThing is Pawn targetPawn && targetPawn != null && targetPawn.health != null && targetPawn.RaceProps.IsFlesh)
+                    {
+                        Hediff targetPawnToxicSludgeHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("TM_ToxicSludge"));
+                        float toxicSludgeSeverity = Rand.Range(0.15f, 0.30f);
+                        if (targetPawnToxicSludgeHediff != null)
+                        {
+                            targetPawnToxicSludgeHediff.Severity += toxicSludgeSeverity;
+                        }
+                        else
+                        {
+                            Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named("TM_ToxicSludge"), targetPawn, null);
+                            hediff.Severity = toxicSludgeSeverity;
+                            targetPawn.health.AddHediff(hediff, null, null);
+                        }
+                        Hediff targetPawnToxicBuildupHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ToxicBuildup"));
+                        float toxicBuildupSeverity = Rand.Range(0.01f, 0.1f);
+                        if (targetPawnToxicBuildupHediff != null)
+                        {
+                            targetPawnToxicBuildupHediff.Severity += toxicBuildupSeverity;
+                        }
+                        else
+                        {
+                            Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named("ToxicBuildup"), targetPawn, null);
+                            hediff.Severity = toxicBuildupSeverity;
+                            targetPawn.health.AddHediff(hediff, null, null);
+                        }
+                    }
                 }
             }
         }
