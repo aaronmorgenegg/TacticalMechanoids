@@ -30,9 +30,9 @@
 		</graphicData>
 		<projectile>
 			<speed>40</speed>
-			<damageDef>Bomb</damageDef>
+			<damageDef>Smoke</damageDef>
 			<damageAmountBase>0</damageAmountBase>
-			<explosionRadius>2.8</explosionRadius>
+			<explosionRadius>3</explosionRadius>
 			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
 			<preExplosionSpawnChance>1.0</preExplosionSpawnChance>
 			<soundExplode>TM_SludgeCannon</soundExplode>
