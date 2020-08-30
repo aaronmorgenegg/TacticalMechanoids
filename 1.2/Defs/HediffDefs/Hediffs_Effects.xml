@@ -3,20 +3,12 @@
 
 	<HediffDef>
 		<defName>TM_ConstructiveMechanites</defName>
-		<hediffClass>TacticalMechanoids.CompConstructiveMechanites</hediffClass>
+		<hediffClass>TacticalMechanoids.HediffCompConstructiveMechanites</hediffClass>
 		<label>constructive mechanites</label>
 		<description>Constructive mechanites from a nearby Mechanite Drone are repairing this mechanoid over time.</description>
 		<defaultLabelColor>(0,0.8,0.5)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		<comps>
-			<li Class="HediffCompProperties_Disappears">
-				<disappearsAfterTicks>
-					<min>500</min>
-					<max>1500</max>
-				</disappearsAfterTicks>
-			</li>
-		</comps>
 		<stages>
 			<li>
 

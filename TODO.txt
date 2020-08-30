@@ -6,10 +6,6 @@ TM_MechanoidLaserCutter - Weapon for MechaniteDrone - inherit from VWE - Laser?
 Patchers to add mechanoids to Vanilla and Royalty mechanoid events
 
 TODO: Errors:
-	- FertilitySource somewhere?
-	-need types for TacticalMEchanoids.X
-		- ConstructiveMechanites
-		- CompProperties_ChangeDef
-		- CompProperties_Floating
-			- isFloater and canCrossWater goes in CompProperties
-		- CompProperties_GenerateMechanites
+	mechaniteDrone doesn't do anything, just stands still?
+	NonMechanoidInfected message displays label, not message.
+	

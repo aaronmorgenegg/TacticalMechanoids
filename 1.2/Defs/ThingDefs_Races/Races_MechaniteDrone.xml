@@ -29,7 +29,7 @@
         </capacities>
         <power>4</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>TM_MechaniteDroneBody</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>MechanicalThorax</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
       </li>
@@ -53,6 +53,15 @@
       <body>TM_MechaniteDroneBody</body>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Centipede_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Centipede_Death</soundDeath>
+					<soundCall>Pawn_Mech_Centipede_Call</soundCall>
+				</li>
+			</lifeStageAges>
       <soundMeleeHitPawn>Pawn_Melee_MechanoidSlash_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_MechanoidSlash_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>

@@ -59,7 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_ConstructiveMechanites.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffCompProperties_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_GenerateMechanites.cs" />
@@ -68,7 +68,7 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_Settings.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_SettingsController.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\PawnCapacityWorker\PawnCapacityWorker_MechaniteGeneration.cs" />
-    <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ConstructiveMechanites.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_GenerateMechanites.cs" />
