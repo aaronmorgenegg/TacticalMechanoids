@@ -33,9 +33,12 @@ namespace TacticalMechanoids
 
         public static bool MechanoidIsEnabled(string def_name)
         {
+            // TODO: if statement chain is gross, try turning this into a dictionary or something
             if (def_name == "TM_MechaniteDrone")
             {
                 return TM_MechaniteDroneFlag;
+            }
+            {
             }
 
             Log.Warning("MechanoidIsEnabled({}) found no matching def_name. Returning false, but this means you misnamed something somewhere.");

@@ -3,13 +3,14 @@
     "",
     "\\1.2",
     "\\1.2\\Defs",
-    "\\1.2\\Defs\\BodyPartDefs",
-    "\\1.2\\Defs\\BodyPartGroupDefs",
+    "\\1.2\\Defs\\HediffDefs",
+    "\\1.2\\Defs\\PawnCapacityDefs",
     "\\Source",
     "\\Source\\TacticalMechanoids",
     "\\Source\\TacticalMechanoids\\TacticalMechanoids",
-    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\CompProperties",
-    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\ThingComps"
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\DefOfs",
+    "\\Source\\TacticalMechanoids\\TacticalMechanoids\\PawnCapacityWorker"
   ],
+  "SelectedNode": "\\Source\\TacticalMechanoids.sln",
   "PreviewInSolutionExplorer": false
 }
