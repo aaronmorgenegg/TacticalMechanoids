@@ -8,4 +8,10 @@
     <labelShort>surgical blade</labelShort>
   </BodyPartGroupDef>
 
+	<BodyPartGroupDef>
+    <defName>TM_Wheels</defName>
+    <label>wheels</label>
+    <labelShort>wheel</labelShort>
+  </BodyPartGroupDef>
+
 </Defs>
