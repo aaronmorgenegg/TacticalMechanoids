@@ -32,10 +32,12 @@
 		<label>toxic sludge</label>
 		<tendable>true</tendable>
 		<makesSickThought>true</makesSickThought>
+		<burnRate>9000</burnRate>
+		<burnDamage>5</burnDamage>
+		<blisterRate>15000</blisterRate>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.50</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="HediffCompProperties_TendDuration">
 				<baseTendDurationHours>12</baseTendDurationHours>
@@ -54,10 +56,6 @@
 						<capacity>Moving</capacity>
 						<postFactor>0.90</postFactor>
 					</li>
-					<li>
-						<capacity>Breathing</capacity>
-						<postFactor>0.90</postFactor>
-					</li>
 				</capMods>
 			</li>
 
@@ -71,12 +69,8 @@
 						<postFactor>0.80</postFactor>
 					</li>
 					<li>
-						<capacity>Manipulation</capacity>
-						<postFactor>0.90</postFactor>
-					</li>
-					<li>
 						<capacity>Breathing</capacity>
-						<postFactor>0.80</postFactor>
+						<postFactor>0.90</postFactor>
 					</li>
 				</capMods>
 			</li>
@@ -92,11 +86,11 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>0.80</postFactor>
+						<postFactor>0.90</postFactor>
 					</li>
 					<li>
 						<capacity>Breathing</capacity>
-						<postFactor>0.70</postFactor>
+						<postFactor>0.80</postFactor>
 					</li>
 				</capMods>
 			</li>
@@ -108,15 +102,15 @@
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<postFactor>0.60</postFactor>
+						<postFactor>0.50</postFactor>
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>0.70</postFactor>
+						<postFactor>0.80</postFactor>
 					</li>
 					<li>
 						<capacity>Breathing</capacity>
-						<postFactor>0.60</postFactor>
+						<postFactor>0.70</postFactor>
 					</li>
 				</capMods>
 			</li>
@@ -132,7 +126,7 @@
 					</li>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>0.60</postFactor>
+						<postFactor>0.70</postFactor>
 					</li>
 					<li>
 						<capacity>Breathing</capacity>
@@ -149,7 +143,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>blister</label>
 		<description>Painful blisters formed as a result of a chemical burn.</description>
-		<defaultLabelColor>(0.7,0.0,0.0)</defaultLabelColor>
+		<defaultLabelColor>(1.0,0.0,0.0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<tendable>true</tendable>
@@ -163,13 +157,10 @@
 			</li>
 		</comps>
 		<stages>
-			<stages>
 				<li>
-					<label>initial</label>
-					<minSeverity>0.00</minSeverity>
+					<partEfficiencyOffset>-0.15</partEfficiencyOffset>
 					<painOffset>0.3</painOffset>
 				</li>
-
 		</stages>
 	</HediffDef>
 

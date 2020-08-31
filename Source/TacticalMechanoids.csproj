@@ -65,6 +65,7 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_GenerateMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\DefOfs\DefOfs.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Harmony\HarmonyPatcher.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ToxicSludge.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_Settings.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_SettingsController.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ConstructiveMechanites.cs" />
