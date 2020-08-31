@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>TM_Carrier</defName>
+    <label>carrier</label>
+    <description>Heavily reinforced mechanoid transport, built to deliver an army of smaller, deadlier mechanoids to the front lines.</description>
+    <statBases>
+    			<MoveSpeed>3.5</MoveSpeed>
+    			<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+    			<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+    			<PsychicSensitivity>0.25</PsychicSensitivity>
+    		</statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+	<comps>
+			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
+				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<defToChangeTo>Mech_Centipede</defToChangeTo>
+        <defToChangeFrom>TM_Carrier</defToChangeFrom>
+			</li>
+			<li Class="TacticalMechanoids.CompProperties_SpawnMechanoidsOnDeath">
+				<totalCombatPower>500</totalCombatPower>
+				<combatPowerVariance>0.25</combatPowerVariance>
+			</li>
+		</comps>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <body>TM_CarrierBody</body>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>3.0</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
+      <lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			<Steel>60</Steel>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>TM_Carrier</defName>
+    <label>carrier</label>
+    <race>TM_Carrier</race>
+    <combatPower>400</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Mechanoid/Carrier/carriere</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>3.0</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.8, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>
