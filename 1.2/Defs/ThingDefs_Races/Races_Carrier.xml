@@ -18,7 +18,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>11.7</power>
+        <power>7.8</power>
         <cooldownTime>2.6</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -31,7 +31,7 @@
         <defToChangeFrom>TM_Carrier</defToChangeFrom>
 			</li>
 			<li Class="TacticalMechanoids.CompProperties_SpawnMechanoidsOnDeath">
-				<totalCombatPower>500</totalCombatPower>
+				<totalCombatPower>300</totalCombatPower>
 				<combatPowerVariance>0.25</combatPowerVariance>
 			</li>
 		</comps>
@@ -70,7 +70,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Mechanoid/Carrier/carriere</texPath>
+          <texPath>Mechanoid/Carrier/carrier</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
           <drawSize>3.0</drawSize>
           <shadowData>

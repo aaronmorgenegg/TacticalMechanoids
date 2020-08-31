@@ -52,7 +52,7 @@
 				<li>
 					<def>TM_ArmorPlating</def>
 					<coverage>0.40</coverage>
-					<depth>Outside</depth>
+					<parts>
 						<li>
 							<def>TM_LoadingRamp</def>
 							<coverage>0.20</coverage>
@@ -75,6 +75,7 @@
 						<li>TM_Wheels</li>
 					</groups>
 				</li>
+				<li>
 					<def>TM_Wheel</def>
 					<height>Bottom</height>
 					<customLabel>middle left wheel</customLabel>
@@ -84,6 +85,7 @@
 						<li>TM_Wheels</li>
 					</groups>
 				</li>
+				<li>
 					<def>TM_Wheel</def>
 					<height>Bottom</height>
 					<customLabel>back left wheel</customLabel>
@@ -93,6 +95,7 @@
 						<li>TM_Wheels</li>
 					</groups>
 				</li>
+				<li>
 					<def>TM_Wheel</def>
 					<height>Bottom</height>
 					<customLabel>front right wheel</customLabel>
@@ -102,6 +105,7 @@
 						<li>TM_Wheels</li>
 					</groups>
 				</li>
+				<li>
 					<def>TM_Wheel</def>
 					<height>Bottom</height>
 					<customLabel>middle right wheel</customLabel>
@@ -111,6 +115,7 @@
 						<li>TM_Wheels</li>
 					</groups>
 				</li>
+				<li>
 					<def>TM_Wheel</def>
 					<height>Bottom</height>
 					<customLabel>back right wheel</customLabel>
