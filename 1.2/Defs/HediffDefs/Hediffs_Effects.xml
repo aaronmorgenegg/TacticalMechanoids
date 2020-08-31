@@ -6,7 +6,7 @@
 		<hediffClass>TacticalMechanoids.HediffCompConstructiveMechanites</hediffClass>
 		<label>constructive mechanites</label>
 		<description>Constructive mechanites from a nearby Mechanite Drone are repairing this mechanoid over time.</description>
-		<defaultLabelColor>(0,0.8,0.5)</defaultLabelColor>
+		<defaultLabelColor>(0,0.7,0.7)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
 		<comps>
@@ -24,15 +24,22 @@
 		</stages>
 	</HediffDef>
 
-	<HediffDef>
+	<HediffDef ParentName="DiseaseBase">
 		<defName>TM_ToxicSludge</defName>
-		<hediffClass>HediffWithComps</hediffClass>
+		<hediffClass>TacticalMechanoids.HediffComp_ToxicSludge</hediffClass>
 		<defaultLabelColor>(0.4, 0.7, 0.2)</defaultLabelColor>
-		<description>Covered in Toxic Sludge, causing slowed movement, disease, and toxic buildup.</description>
+		<description>Exposed to a slurry of toxic chemicals, including blistering and nerve agents. Immediate symptoms include reduced motor control, nausea, and difficulty breathing. Carcinoma, Dementia, chemical burns, and blisters may form after initial exposure.</description>
 		<label>toxic sludge</label>
+		<tendable>true</tendable>
+		<makesSickThought>true</makesSickThought>
 		<comps>
-			<li Class="HediffCompProperties_Immunizable">
-				<severityPerDayNotImmune>-0.75</severityPerDayNotImmune>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.50</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+				<severityPerDayTended>-0.75</severityPerDayTended>
 			</li>
 		</comps>
 
@@ -41,9 +48,14 @@
 			<li>
 				<label>initial</label>
 				<minSeverity>0.00</minSeverity>
+				<vomitMtbDays>4</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
+						<postFactor>0.90</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
 						<postFactor>0.90</postFactor>
 					</li>
 				</capMods>
@@ -52,10 +64,18 @@
 			<li>
 				<label>minor</label>
 				<minSeverity>0.2</minSeverity>
-				<vomitMtbDays>2</vomitMtbDays>
+				<vomitMtbDays>1</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
+						<postFactor>0.80</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.90</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
 						<postFactor>0.80</postFactor>
 					</li>
 				</capMods>
@@ -64,64 +84,91 @@
 			<li>
 				<label>moderate</label>
 				<minSeverity>0.40</minSeverity>
-				<vomitMtbDays>1</vomitMtbDays>
+				<vomitMtbDays>.5</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
 						<postFactor>0.70</postFactor>
 					</li>
-				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Flu</hediff>
-						<mtbDays>146</mtbDays>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.80</postFactor>
 					</li>
-				</hediffGivers>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.70</postFactor>
+					</li>
+				</capMods>
 			</li>
 
 			<li>
 				<label>serious</label>
 				<minSeverity>0.60</minSeverity>
-				<vomitMtbDays>0.5</vomitMtbDays>
+				<vomitMtbDays>0.25</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<postFactor>0.50</postFactor>
+						<postFactor>0.60</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.70</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.60</postFactor>
 					</li>
 				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Flu</hediff>
-						<mtbDays>37</mtbDays>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Plague</hediff>
-						<mtbDays>146</mtbDays>
-					</li>
-				</hediffGivers>
 			</li>
 
 			<li>
 				<label>extreme</label>
 				<minSeverity>0.80</minSeverity>
-				<vomitMtbDays>0.25</vomitMtbDays>
+				<vomitMtbDays>0.1</vomitMtbDays>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
-						<setMax>0.10</setMax>
+						<postFactor>0.10</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.60</postFactor>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<postFactor>0.50</postFactor>
 					</li>
 				</capMods>
-				<hediffGivers>
-					<li Class="HediffGiver_Random">
-						<hediff>Plague</hediff>
-						<mtbDays>37</mtbDays>
-					</li>
-					<li Class="HediffGiver_Random">
-						<hediff>Flu</hediff>
-						<mtbDays>7</mtbDays>
-					</li>
-				</hediffGivers>
 			</li>
+
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>TM_Blister</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>blister</label>
+		<description>Painful blisters formed as a result of a chemical burn.</description>
+		<defaultLabelColor>(0.7,0.0,0.0)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<tendable>true</tendable>
+		<makesSickThought>true</makesSickThought>
+		<comps>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.50</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>12</baseTendDurationHours>
+			</li>
+		</comps>
+		<stages>
+			<stages>
+				<li>
+					<label>initial</label>
+					<minSeverity>0.00</minSeverity>
+					<painOffset>0.3</painOffset>
+				</li>
 
 		</stages>
 	</HediffDef>

@@ -5,4 +5,5 @@
 	<TM_enableBelcher>Enable Belcher Spawns</TM_enableBelcher>
 	<TM_enableCarrier>Enable Carrier Spawns</TM_enableCarrier>
 	<TM_enableMechaniteDrone>Enable Mechanite Drone Spawns</TM_enableMechaniteDrone>
+	<TM_DevelopedBlister>{} has developed blisters from a chemical burn.</TM_DevelopedBlister>
 </LanguageData>
