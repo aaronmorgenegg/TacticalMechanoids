@@ -2,6 +2,7 @@
 
 <LanguageData>
 	<TM_NonMechanoidContractedMechanites>{0} has contracted painful mechanites from {1}!</TM_NonMechanoidContractedMechanites>
-	<TM_enableMechaniteDrone>Enable Mechanite Drone Spawns</TM_enableMechaniteDrone>
 	<TM_enableBelcher>Enable Belcher Spawns</TM_enableBelcher>
+	<TM_enableCarrier>Enable Carrier Spawns</TM_enableCarrier>
+	<TM_enableMechaniteDrone>Enable Mechanite Drone Spawns</TM_enableMechaniteDrone>
 </LanguageData>

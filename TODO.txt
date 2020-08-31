@@ -5,3 +5,4 @@ Messages translate aren't working - nonmechanoid message is off - print TM_NonMe
 Add good textures
 add sounds
 Add Dubs Hygiene compapibility - washing removes ToxicSludge
+Maybe a unique damageDef
