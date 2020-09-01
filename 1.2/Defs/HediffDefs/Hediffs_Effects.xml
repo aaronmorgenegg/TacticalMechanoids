@@ -26,15 +26,12 @@
 
 	<HediffDef ParentName="DiseaseBase">
 		<defName>TM_ToxicSludge</defName>
-		<hediffClass>TacticalMechanoids.HediffComp_ToxicSludge</hediffClass>
+		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.4, 0.7, 0.2)</defaultLabelColor>
 		<description>Exposed to a slurry of toxic chemicals, including blistering and nerve agents. Immediate symptoms include reduced motor control, nausea, and difficulty breathing. Carcinoma, Dementia, chemical burns, and blisters may form after initial exposure.</description>
 		<label>toxic sludge</label>
 		<tendable>true</tendable>
 		<makesSickThought>true</makesSickThought>
-		<burnRate>9000</burnRate>
-		<burnDamage>5</burnDamage>
-		<blisterRate>15000</blisterRate>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.50</severityPerDay>
@@ -43,6 +40,15 @@
 				<baseTendDurationHours>12</baseTendDurationHours>
 				<severityPerDayTended>-0.75</severityPerDayTended>
 			</li>
+			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
+				<burnRate>9000</burnRate>
+				<burnDamage>5</burnDamage>
+				<blisterRate>15000</blisterRate>
+				<burnVariance>0.25</burnVariance>
+				<blisterVariance>0.25</blisterVariance>
+				<burnDamageVariance>0.5</burnDamageVariance>
+			</li>
+
 		</comps>
 
 		<stages>
