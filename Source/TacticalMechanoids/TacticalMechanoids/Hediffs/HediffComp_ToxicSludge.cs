@@ -42,14 +42,30 @@ namespace TacticalMechanoids
                     currentBlisterVariance = Rand.Range(-Props.blisterVariance, Props.blisterVariance);
                     IEnumerable<BodyPartRecord> injuredBodyParts = Pawn.health.hediffSet.GetInjuredParts();
                     HediffDef burnHediff = HediffDef.Named("Burn");
-                    // TODO: Randomize list first?
+                    HediffDef blisterHediff = HediffDef.Named("TM_Blister");
+                    GenList.Shuffle<BodyPartRecord>(injuredBodyParts.ToList());
                     foreach (BodyPartRecord bodyPart in injuredBodyParts)
                     {
                         if (Pawn.health.hediffSet.HasHediff(burnHediff, bodyPart))
                         {
-                            Pawn.health.AddHediff(HediffDef.Named("TM_Blister"), bodyPart, null);
-                            string message = "TM_DevelopedBlister".Translate(Pawn.Label);
-                            Messages.Message(message, MessageTypeDefOf.NegativeEvent);
+                            if (Pawn.health.hediffSet.HasHediff(blisterHediff, bodyPart))
+                            {
+                                List<Hediff> blisters = new List<Hediff>(Pawn.health.hediffSet.hediffs);
+                                GenList.Shuffle<Hediff>(blisters);
+                                foreach (Hediff blister in blisters)
+                                {
+                                    if (blister.Part == bodyPart && blister.def == blisterHediff)
+                                    {
+                                        blister.Severity += .3f;
+                                        break;
+                                    }
+                                }
+                            } else
+                            {
+                                Pawn.health.AddHediff(blisterHediff, bodyPart, null);
+                                string message = "TM_DevelopedBlister".Translate(Pawn.Label);
+                                Messages.Message(message, MessageTypeDefOf.NegativeEvent);
+                            }
                             break;
                         }
                     }

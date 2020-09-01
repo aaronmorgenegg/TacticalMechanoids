@@ -42,7 +42,7 @@
 			</li>
 			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
 				<burnRate>9000</burnRate>
-				<burnDamage>5</burnDamage>
+				<burnDamage>10</burnDamage>
 				<blisterRate>15000</blisterRate>
 				<burnVariance>0.25</burnVariance>
 				<blisterVariance>0.25</blisterVariance>
@@ -152,6 +152,7 @@
 		<defaultLabelColor>(1.0,0.0,0.0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
+		<initialSeverity>0.3</initialSeverity>
 		<tendable>true</tendable>
 		<makesSickThought>true</makesSickThought>
 		<comps>
@@ -164,8 +165,22 @@
 		</comps>
 		<stages>
 				<li>
+					<label>minor</label>
+					<minSeverity>0.0</minSeverity>
+					<partEfficiencyOffset>-0.05</partEfficiencyOffset>
+					<painOffset>0.1</painOffset>
+				</li>
+				<li>
+					<label>moderate</label>
+					<minSeverity>0.2</minSeverity>
 					<partEfficiencyOffset>-0.15</partEfficiencyOffset>
 					<painOffset>0.3</painOffset>
+				</li>
+				<li>
+					<label>serious</label>
+					<minSeverity>0.5</minSeverity>
+					<partEfficiencyOffset>-0.30</partEfficiencyOffset>
+					<painOffset>0.5</painOffset>
 				</li>
 		</stages>
 	</HediffDef>
