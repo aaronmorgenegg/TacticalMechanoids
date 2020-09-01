@@ -24,7 +24,8 @@ namespace TacticalMechanoids
             if (this.parent is Pawn pawn && pawn != null & pawn.health != null)
             {
                 float mechaniteGeneration = pawn.health.capacities.GetLevel(PawnCapacityDefOf.TM_MechaniteGeneration);
-                bool isAwake = !pawn.Dead && !pawn.Downed && pawn.Map != null && pawn.TryGetComp<CompCanBeDormant>().Awake;
+                bool isAwake = !pawn.Dead && !pawn.Downed && pawn.Map != null && !pawn.stances.stunner.Stunned && pawn.TryGetComp<CompCanBeDormant>().Awake;
+
                 if (mechaniteGeneration > 0 && isAwake && tickCounter >= (this.Props.mechaniteSpawnRate / mechaniteGeneration))
                 {
                     foreach (Thing thing in GenRadial.RadialDistinctThingsAround(pawn.Position, pawn.Map, Props.mechaniteRange, true))

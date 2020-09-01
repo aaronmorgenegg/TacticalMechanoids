@@ -18,7 +18,7 @@ namespace TacticalMechanoids
 
             if (healCounter >= constructiveMechaniteHealRate)
             {
-                if (pawn.health != null)
+                if (pawn.health != null && !pawn.stances.stunner.Stunned)
                 {
                     if (pawn.health.hediffSet.GetInjuriesTendable() != null && pawn.health.hediffSet.GetInjuriesTendable().Count<Hediff_Injury>() > 0)
                     {

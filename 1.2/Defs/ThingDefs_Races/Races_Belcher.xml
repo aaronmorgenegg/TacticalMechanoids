@@ -5,7 +5,7 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>TM_Belcher</defName>
     <label>belcher</label>
-    <description>A hulking mechanoid whose body is a veritable chemistry lab. Equipped for terraforming planets as well as chemical warfare, the Belcher spews globs of toxic sludge that poison and slow, making escape from other, faster mechanoids difficult.</description>
+    <description>A hulking mechanoid whose body is a veritable chemistry lab. Equipped for terraforming planets as well as chemical warfare, the Belcher spews globs of toxic sludge that impair motor control, and may cause chemical burns for several days after exposure.</description>
     <statBases>
     			<MoveSpeed>2.0</MoveSpeed>
     			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
@@ -52,9 +52,8 @@
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-			<Steel>50</Steel>
-			<Plasteel>10</Plasteel>
-			<Chemfuel>50</Chemfuel>
+			<Steel>30</Steel>
+			<Chemfuel>25</Chemfuel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
   </ThingDef>

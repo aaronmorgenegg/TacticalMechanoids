@@ -44,13 +44,13 @@ Shredder:
 	- Description
 		- A horrific death machine, almost entirely composed of razor-sharp spinning blades. Those who come face to face with a Shredder are lucky to escape with missing limbs - the unlucky are turned into mincemeat. 
 	- Appearance
-		- Boxy, with the front half dominated by rows of spinning blades.
+		- Worm, with the front half dominated by rows of spinning blades.
 	- Stats
-		- Slow movement, Moderately tanky, High melee damage
+		- Slow movement, Moderately tanky, High melee damage, Can Burrow
 	- Attacks
-		- High melee damage blades with a bonus chance to remove limbs.
+		- High melee damage blades
 	- Special
-		- Butchers downed or dead pawns, lowering colonist mood
+		- Butchers downed or dead pawns, lowering colonist mood, sapper, can tunnel underground in mechanoid-infestation raids, or to avoid ranged attacks.
 		
 Dynamo:
 	- Description
@@ -90,17 +90,20 @@ Hex: (Archon, Psion,)
 
 Spider drone(name?):
 	- Idea: a small mechanical spider mechanoid. Fragile, fast, weak melee dps. One death, the legs continue fighting as slow-moving, fragile inchworm mechanoids. Designed to swarm, trigger traps, and distract.
+		- Can curl up into a ball and be used as a mortar shell for mechanoid mortars?
 
 Infiltrator:
 	- Idea: an above-average colonist joins, soon has a mental break where it disables the power grid, hacks turrets/defenses, and starts attacking from within. Turns into an infiltrator mech when pawn is damaged. Triggers a mech raid when this happens.
+		- Possibly can go invisible?
 
 Acid mech(name?): 
 	- Idea: Short ranged, wide area acid sprayer designed to kill insectoids, used as DPS, sapper, and to melt armor.
 
-Excavator:
-	- Idea: A big drill. Melee DPS, sapper, and burrow raid like infestations but with mechs. + a combo infestation/mech raid?
+Mech Mortar(Name?)
+	- A turret in mechanoid clusters that fires other mechanoids at you. Like a regular mortar that also spawns a weak melee mechanoid.
 
-
+Suicide mech
+	- Simple, a small, squishy, fast moving mech loaded with explosives that blows up on death. Fire damage, so doesn't really effect friendly mechanoids.
 
 Events:
 

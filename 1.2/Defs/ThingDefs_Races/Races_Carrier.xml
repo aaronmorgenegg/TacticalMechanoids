@@ -56,9 +56,8 @@
       <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-			<Steel>60</Steel>
-			<Plasteel>20</Plasteel>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<Steel>30</Steel>
+			<Plasteel>15</Plasteel>
 		</butcherProducts>
   </ThingDef>
 
