@@ -45,7 +45,7 @@
 			    <canCrossWater>true</canCrossWater>
 		    </li>
 			<li Class="TacticalMechanoids.CompProperties_GenerateMechanites">
-				<mechaniteSpawnRate>500</mechaniteSpawnRate>
+				<mechaniteSpawnRate>250</mechaniteSpawnRate>
 				<nonMechanoidChance>0.05</nonMechanoidChance>
 			</li>
 		</comps>
@@ -70,8 +70,8 @@
       <soundMeleeMiss>Pawn_Melee_MechanoidSlash_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-			<Steel>30</Steel>
-			<Plasteel>10</Plasteel>
+			<Steel>20</Steel>
+			<Plasteel>5</Plasteel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</butcherProducts>
   </ThingDef>
@@ -80,7 +80,7 @@
     <defName>TM_MechaniteDrone</defName>
     <label>mechanite drone</label>
     <race>TM_MechaniteDrone</race>
-    <combatPower>100</combatPower>
+    <combatPower>150</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
