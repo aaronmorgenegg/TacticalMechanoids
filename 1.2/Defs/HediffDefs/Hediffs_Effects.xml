@@ -41,8 +41,8 @@
 				<severityPerDayTended>-0.75</severityPerDayTended>
 			</li>
 			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
-				<burnRate>7000</burnRate>
-				<burnDamage>20</burnDamage>
+				<burnRate>4000</burnRate>
+				<burnDamage>25</burnDamage>
 				<blisterRate>15000</blisterRate>
 				<burnVariance>0.25</burnVariance>
 				<blisterVariance>0.25</blisterVariance>
@@ -159,8 +159,12 @@
 			<li Class="HediffCompProperties_Infecter">
 				<infectionChance>0.50</infectionChance>
 			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+			</li>
 			<li Class="HediffCompProperties_TendDuration">
 				<baseTendDurationHours>12</baseTendDurationHours>
+				<severityPerDayTended>-0.075</severityPerDayTended>
 			</li>
 		</comps>
 		<stages>
