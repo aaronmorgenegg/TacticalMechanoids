@@ -41,7 +41,7 @@
 				<severityPerDayTended>-0.75</severityPerDayTended>
 			</li>
 			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
-				<burnRate>9000</burnRate>
+				<burnRate>7000</burnRate>
 				<burnDamage>20</burnDamage>
 				<blisterRate>15000</blisterRate>
 				<burnVariance>0.25</burnVariance>
@@ -152,7 +152,7 @@
 		<defaultLabelColor>(1.0,0.0,0.0)</defaultLabelColor>
 		<scenarioCanAdd>false</scenarioCanAdd>
 		<maxSeverity>1.0</maxSeverity>
-		<initialSeverity>0.3</initialSeverity>
+		<initialSeverity>0.1</initialSeverity>
 		<tendable>true</tendable>
 		<makesSickThought>true</makesSickThought>
 		<comps>

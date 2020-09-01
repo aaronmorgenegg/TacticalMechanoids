@@ -34,7 +34,7 @@
 			<damageAmountBase>0</damageAmountBase>
 			<explosionRadius>3</explosionRadius>
 			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>
-			<preExplosionSpawnChance>1.0</preExplosionSpawnChance>
+			<preExplosionSpawnChance>0.5</preExplosionSpawnChance>
 			<soundExplode>TM_SludgeCannon</soundExplode>
 
 		</projectile>
