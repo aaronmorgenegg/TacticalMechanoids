@@ -27,9 +27,10 @@ namespace TacticalMechanoids
             {
                 burnCounter = 0;
                 currentBurnVariance = Rand.Range(-Props.burnVariance, Props.burnVariance);
+                float pawnToxicSensitivity = Pawn.GetStatValue(StatDef.Named("ToxicSensitivity"));
                 if (Pawn.health != null)
                 {
-                    Pawn.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed("Burn"), (Props.burnDamage * Rand.Range(-Props.burnDamageVariance, Props.burnDamageVariance)), 0f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
+                    Pawn.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed("Burn"), (Props.burnDamage * Rand.Range(-Props.burnDamageVariance, Props.burnDamageVariance) * parent.Severity), 0.9f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
                 }
             }
 
@@ -56,7 +57,7 @@ namespace TacticalMechanoids
                                 {
                                     if (blister.Part == bodyPart && blister.def == blisterHediff)
                                     {
-                                        blister.Severity += .3f;
+                                        blister.Severity += .3f * parent.Severity;
                                         break;
                                     }
                                 }

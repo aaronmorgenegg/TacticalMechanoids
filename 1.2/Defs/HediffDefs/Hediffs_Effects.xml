@@ -42,7 +42,7 @@
 			</li>
 			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
 				<burnRate>9000</burnRate>
-				<burnDamage>10</burnDamage>
+				<burnDamage>20</burnDamage>
 				<blisterRate>15000</blisterRate>
 				<burnVariance>0.25</burnVariance>
 				<blisterVariance>0.25</blisterVariance>

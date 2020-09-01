@@ -18,8 +18,9 @@ namespace TacticalMechanoids
                 {
                     if (hitThing is Pawn targetPawn && targetPawn != null && targetPawn.health != null && targetPawn.RaceProps.IsFlesh)
                     {
+                        float targetPawnToxicSensitivity = targetPawn.GetStatValue(StatDef.Named("ToxicSensitivity"));
                         Hediff targetPawnToxicSludgeHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("TM_ToxicSludge"));
-                        float toxicSludgeSeverity = Rand.Range(0.15f, 0.30f);
+                        float toxicSludgeSeverity = Rand.Range(0.15f, 0.30f) * targetPawnToxicSensitivity;
                         if (targetPawnToxicSludgeHediff != null)
                         {
                             targetPawnToxicSludgeHediff.Severity += toxicSludgeSeverity;
@@ -31,7 +32,7 @@ namespace TacticalMechanoids
                             targetPawn.health.AddHediff(hediff, null, null);
                         }
                         Hediff targetPawnToxicBuildupHediff = targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named("ToxicBuildup"));
-                        float toxicBuildupSeverity = Rand.Range(0.03f, 0.15f);
+                        float toxicBuildupSeverity = Rand.Range(0.03f, 0.15f) * targetPawnToxicSensitivity;
                         if (targetPawnToxicBuildupHediff != null)
                         {
                             targetPawnToxicBuildupHediff.Severity += toxicBuildupSeverity;
