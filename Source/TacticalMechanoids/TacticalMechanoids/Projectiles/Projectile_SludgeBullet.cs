@@ -44,6 +44,10 @@ namespace TacticalMechanoids
                             targetPawn.health.AddHediff(hediff, null, null);
                         }
                     }
+                    else if (hitThing is Plant targetPlant && targetPlant != null)
+                    {
+                        targetPlant.CropBlighted();
+                    }
                 }
             }
         }
