@@ -4,5 +4,5 @@ Messages translate aren't working - nonmechanoid message is off - print TM_NonMe
 	-Options menu looks funky too, might be related
 Add good textures
 add sounds
-Add Dubs Hygiene compapibility - washing removes ToxicSludge
-Maybe a unique damageDef
+Add Dubs Hygiene compapibility - Toxic Sludge sets hygiene to 0, washing lowers ToxicSludge severity.
+Maybe a unique damageDef for ToxicSludge

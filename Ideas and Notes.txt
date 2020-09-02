@@ -84,9 +84,9 @@ Hex: (Archon, Psion,)
 	- Stats
 		- somewhat fragile, Floating, slow-medium speed, weak in melee
 	- Attacks
-		- psionics (Psychic Lance(direct brain damage attack), Berserk, vertigo pulse, chaos skip, focus)
+		- psionics (Psychic Lance(direct brain damage attack), Berserk, vertigo pulse, chaos skip, flashstorm)
 	- Special
-		- Uses psycasts, disassembles into psycast trainers.
+		- Uses psycasts, may disassemble into a psycast trainer.
 
 Spider drone(name?):
 	- Idea: a small mechanical spider mechanoid. Fragile, fast, weak melee dps. One death, the legs continue fighting as slow-moving, fragile inchworm mechanoids. Designed to swarm, trigger traps, and distract.
@@ -102,8 +102,8 @@ Acid mech(name?):
 Mech Mortar(Name?)
 	- A turret in mechanoid clusters that fires other mechanoids at you. Like a regular mortar that also spawns a weak melee mechanoid.
 
-Suicide mech
-	- Simple, a small, squishy, fast moving mech loaded with explosives that blows up on death. Fire damage, so doesn't really effect friendly mechanoids.
+Shellshock(Name?)
+	- A slow moving, armored, tortoise? shaped mechanoid with a powerful explosive gun, also periodically lays mines where it walks.
 
 Events:
 
