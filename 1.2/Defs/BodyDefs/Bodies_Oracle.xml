@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<BodyDef>
+		<defName>TM_Oracle</defName>
+		<label>oracle</label>
+		<corePart>
+			<def>TM_MechanicalShell</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>TM_SensorLens</def>
+					<height>Middle</height>
+					<coverage>0.14</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.4</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.05</coverage>
+						</li>
+					</parts>
+					<def>TM_PsyLattice</def>
+					<height>Middle</height>
+					<depth>Inside</depth>
+					<coverage>0.20</coverage>
+					<parts>
+						<li>
+							<def>TM_PsycastProcessor</def>
+							<customLabel>psycast processor</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+						<li>
+							<def>TM_NeuralHeatSink</def>
+							<customLabel>neural heatsink</customLabel>
+							<coverage>0.2</coverage>
+						</li>
+						<li>
+							<def>TM_PsionicAmplifier</def>
+							<customLabel>first psionic amplifier</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>TM_PsionicAmplifier</def>
+							<customLabel>second psionic amplifier</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>TM_PsionicAmplifier</def>
+							<customLabel>third psionic amplifier</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+						<li>
+							<def>TM_PsionicAmplifier</def>
+							<customLabel>fourth psionic amplifier</customLabel>
+							<coverage>0.1</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+				<li>
+					<def>TM_Repulsor</def>
+					<height>Bottom</height>
+					<customLabel>repulsor</customLabel>
+					<coverage>0.1</coverage>
+					<depth>Outside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>
