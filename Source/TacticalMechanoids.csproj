@@ -74,6 +74,7 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_SludgeBullet.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_Floating.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\DeathActionWorker_SpawnMechanoids.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_SpawnMechanoidsOnDeath.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_GenerateMechanites.cs" />
   </ItemGroup>
