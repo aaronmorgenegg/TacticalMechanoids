@@ -35,7 +35,6 @@
 				<combatPowerVariance>0.25</combatPowerVariance>
         <mechanoidsToChooseFrom>
             <li>Mech_Scyther</li>
-            <li>TM_MechaniteDrone</li>
         </mechanoidsToChooseFrom>
 			</li>
 		</comps>
