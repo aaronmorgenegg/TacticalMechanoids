@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>TM_Oracle</defName>
+    <label>oracle</label>
+    <description>A hyper-intelligent mechanoid AI contained within a dense psy-amp lattice. Oracles possess incredible psychic powers, which they often use to exterminate biological lifeforms. They are rumored to be capable of seeing the future, and are often worshipped by mechanoid cults.</description>
+    <statBases>
+    			<MoveSpeed>3.5</MoveSpeed>
+    			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
+    			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
+    			<PsychicSensitivity>1.0</PsychicSensitivity>
+    		</statBases>
+    <tools>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
+				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<defToChangeTo>Mech_Centiped</defToChangeTo>
+        <defToChangeFrom>TM_Oraclee</defToChangeFrom>
+			</li>
+		    <li Class="TacticalMechanoids.CompProperties_Floating">
+			    <isFloater>true</isFloater>
+			    <canCrossWater>true</canCrossWater>
+		    </li>
+			<li Class="TacticalMechanoids.CompProperties_PsycastOnAllies">
+				<psycastsToUse>
+          <li>Focus</li>
+        </psycastsToUse>
+        <psycastFrequency>5000</psycastFrequency>
+			</li>
+		</comps>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <body>TM_OracleBody</body>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>2.5</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			<Steel>20</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>TM_Oracle</defName>
+    <label>oracle</label>
+    <race>TM_Oracle</race>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Mechanoid/Oracle/oracle</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.0, 1.0, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>
