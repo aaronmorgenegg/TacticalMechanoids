@@ -10,7 +10,7 @@
     			<MoveSpeed>3.5</MoveSpeed>
     			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
     			<ArmorRating_Sharp>0.30</ArmorRating_Sharp>
-    			<PsychicSensitivity>1.0</PsychicSensitivity>
+    			<PsychicSensitivity>0.0</PsychicSensitivity>
     		</statBases>
     <tools>
       <li>
@@ -29,7 +29,7 @@
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
 				<defToChangeTo>Mech_Centipede</defToChangeTo>
-        <defToChangeFrom>TM_Oraclee</defToChangeFrom>
+        <defToChangeFrom>TM_Oracle</defToChangeFrom>
 			</li>
 		    <li Class="TacticalMechanoids.CompProperties_Floating">
 			    <isFloater>true</isFloater>
@@ -88,7 +88,7 @@
     </lifeStages>
     <weaponMoney>9999~9999</weaponMoney>
 		<weaponTags>
-			<li>TM_PsyLance</li>
+			<li>TM_MechanoidPsyLance</li>
 		</weaponTags>
   </PawnKindDef>
 
