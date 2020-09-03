@@ -102,6 +102,22 @@
 			<damageDef>Blunt</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 		</projectile>
+		<comps>
+				<li Class="TacticalMechanoids.CompProperties_PsycastOnEnemies">
+					<psycastsToUse>
+	          <li>Berserk</li>
+	          <li>VertigoPulse</li>
+	          <li>Flashstorm</li>
+	          <li>ChaosSkip</li>
+	          <li>Berserk</li>
+	          <li>Burden</li>
+	          <li>Stun</li>
+	          <li>BlindingPulse</li>
+	          <li>Beckon</li>
+	        </psycastsToUse>
+	        <psycastChance>0.25</psycastChance>
+				</li>
+			</comps>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGunWithQuality">

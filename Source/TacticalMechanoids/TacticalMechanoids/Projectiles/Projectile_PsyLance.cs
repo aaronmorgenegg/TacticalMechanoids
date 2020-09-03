@@ -11,7 +11,7 @@ namespace TacticalMechanoids
         {
             get
             {
-                return this.GetComp<Comp_PsycastOnEnemies>.Props;
+                return this.GetComp<CompPsycastOnEnemies>().Props;
             }
         }
 
@@ -19,10 +19,11 @@ namespace TacticalMechanoids
         {
             base.Impact(hitThing);
 
-            if (hitThing is Pawn hitPawn && hitPawn != null)
+            if (hitThing is Pawn hitPawn && hitPawn != null && Props != null)
             {
-                // TODO: deal additional damage to brain directly
-                // TODO: call compPsycastOnEnemies.CastPsycast
+                BodyPartRecord brain = hitPawn.health.hediffSet.GetBrain();
+                hitPawn.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed("Blunt"), Props.brainDamage * Rand.Range(-.25f, .25f), 1.0f, -1f, this, brain, launcher.def, DamageInfo.SourceCategory.ThingOrUnknown, null));
+                this.GetComp<CompPsycastOnEnemies>().CastPsycast(hitPawn);
             }
         }
 
