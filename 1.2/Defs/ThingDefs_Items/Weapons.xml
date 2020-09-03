@@ -100,7 +100,7 @@
 			<flyOverhead>false</flyOverhead>
 			<speed>40</speed>
 			<damageDef>TM_PsionicDamage</damageDef>
-			<damageAmountBase>20</damageAmountBase>
+			<damageAmountBase>10</damageAmountBase>
       <armorPenetrationBase>1.0</armorPenetrationBase>
 		</projectile>
 		<comps>

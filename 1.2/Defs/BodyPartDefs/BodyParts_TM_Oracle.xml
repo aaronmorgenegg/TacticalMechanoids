@@ -4,7 +4,7 @@
 
 	<BodyPartDef>
 		<defName>TM_MechanicalShell</defName>
-		<label>body</label>
+		<label>shell</label>
 		<hitPoints>40</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -40,7 +40,7 @@
 
 	<BodyPartDef>
 		<defName>TM_PsycastProcessor</defName>
-		<label>body</label>
+		<label>psycast processor</label>
 		<hitPoints>10</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -54,7 +54,7 @@
 
 	<BodyPartDef>
 		<defName>TM_NeuralHeatSink</defName>
-		<label>body</label>
+		<label>neural heat sink</label>
 		<hitPoints>10</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
@@ -65,7 +65,7 @@
 
 	<BodyPartDef>
 		<defName>TM_PsionicAmplifier</defName>
-		<label>body</label>
+		<label>psionic amplifier</label>
 		<hitPoints>5</hitPoints>
 		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
 		<skinCovered>false</skinCovered>
