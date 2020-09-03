@@ -6,3 +6,4 @@ Add good textures
 add sounds
 Add Dubs Hygiene compapibility - Toxic Sludge sets hygiene to 0, washing lowers ToxicSludge severity.
 Maybe a unique damageDef for ToxicSludge
+Hide Oracle behind ModLister.RoyaltyInstalled, or a royalty patch?

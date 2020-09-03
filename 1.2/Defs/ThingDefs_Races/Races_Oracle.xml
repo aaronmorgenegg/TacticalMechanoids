@@ -86,6 +86,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>TM_PsyLance</li>
+		</weaponTags>
   </PawnKindDef>
 
 
