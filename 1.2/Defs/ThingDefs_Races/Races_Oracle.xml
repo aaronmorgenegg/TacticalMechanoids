@@ -39,7 +39,7 @@
 				<psycastsToUse>
           <li>TM_MechanoidFocus</li>
         </psycastsToUse>
-        <psycastFrequency>5000</psycastFrequency>
+        <psycastFrequency>2000</psycastFrequency>
 			</li>
 		</comps>
     <race>

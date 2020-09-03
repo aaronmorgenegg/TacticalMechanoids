@@ -9,6 +9,7 @@ namespace TacticalMechanoids
     {
         public List<string> psycastsToUse = new List<string>();
         public int psycastFrequency = 5000;
+        public int psycastRange = 25;
 
         public CompProperties_PsycastOnFriendlies()
         {
