@@ -35,9 +35,9 @@ namespace TacticalMechanoids
                         string psycastName = Props.psycastsToUse[Rand.Range(0, Props.psycastsToUse.Count)];
                         foreach (Thing thing in GenRadial.RadialDistinctThingsAround(sourcePawn.Position, sourcePawn.Map, Props.psycastRange, true))
                         {
-                            if (thing != null && thing is Pawn targetPawn && targetPawn.health != null)
+                            if (thing != null && thing is Pawn targetPawn && targetPawn != sourcePawn && targetPawn.health != null)
                             {
-                                if (targetPawn.RaceProps.IsMechanoid && targetPawn.health.hediffSet.GetFirstHediffOfDef(HediffDef.Named(psycastName)) == null)
+                                if (targetPawn.RaceProps.IsMechanoid && targetPawn.Faction == Faction.OfMechanoids)
                                 {
                                     AbilityDef psycastDef = DefDatabase<AbilityDef>.GetNamed(psycastName);
                                     Psycast psycast = new Psycast(sourcePawn, psycastDef);

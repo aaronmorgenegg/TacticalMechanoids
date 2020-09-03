@@ -262,6 +262,7 @@
         <onlyBrain>True</onlyBrain>
         <psychic>True</psychic>
         <durationMultiplier>PsychicSensitivity</durationMultiplier>
+        <applicableToMechs>True</applicableToMechs>
       </li>
       <li Class="CompProperties_AbilityMoteOnTarget">
         <moteDef>Mote_PsycastPsychicEffect</moteDef>
