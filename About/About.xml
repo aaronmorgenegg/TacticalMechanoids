@@ -11,17 +11,30 @@
 			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
 			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
 		</li>
+		<li>
+			<packageId>jecrell.jecstools</packageId>
+			<displayName>JecsTools</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=932008009</steamWorkshopUrl>
+			<downloadUrl>https://discord.gg/AaVFA7V</downloadUrl>
+		</li>
 	</modDependencies>
-	
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>UnlimitedHugs.HugsLib</li>
+		<li>jecrell.jecstools</li>
+	</loadAfter>
+
 	<author>Mystrymuffins</author>
-	
+
 		<packageId>mystrymuffins.tacticalmechanoids</packageId>
 
 	<description>Adds new types of mechanoids to rimworld.
-	
+
 &lt;size=24&gt;Features&lt;/size&gt;
 
-Adds 7 new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits. Adds some extra challenge, variety, and tactics to mechanoid combat.
+Adds 6 new types of mechanoids to the game, with an emphasis on mechanoids with unique supportive, offensive, and defensive traits. Adds some extra challenge, variety, and tactics to mechanoid combat.
 
 Each mechanoid type can be enabled or disabled individually in the mod's options.
 
@@ -67,17 +80,7 @@ Each mechanoid type can be enabled or disabled individually in the mod's options
 		- Special
 		- Butchers downed or dead pawns.
 
-		Herald:
-		- Description
-		- A fast moving, 4-legged hound-like mechanoid, with 2 deafening "sound cannons" on it's back. The sound it makes triggers fear responses, and is powerful enough to confuse and even incapacitate humans.
-		- Stats
-		- Fast moving, low durability, average melee attack, medium range sonic attack.
-		- Attacks
-		- Average melee attack, long range sonic attack that damages through cover and armor, effectiveness is governed by hearing. Damages ears and brain, lowering consciousness, mood debuff, and vomiting.
-		- Special
-		- Unique sonic weaponry.
-
-		Hex:
+		Oracle:
 		- Description
 		- A hyper-intelligent mechanoid AI contained within a dense psy-amp lattice. The Hex projects malevolent psionic energies against all biological life.
 		- Stats
