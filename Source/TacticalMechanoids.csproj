@@ -59,6 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_PsycastOnFriendlies.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_PsycastOnEnemies.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_SpawnMechanoidsOnDeath.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\CompProperties\CompProperties_Floating.cs" />
@@ -71,10 +73,13 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_SettingsController.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\PawnCapacityWorker\PawnCapacityWorker_MechaniteGeneration.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_PsyBlast.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_SludgeBullet.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ChangeDef.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_Floating.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\DeathActionWorker_SpawnMechanoids.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_PsycastOnFriendlies.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_PsycastOnEnemies.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_SpawnMechanoidsOnDeath.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_GenerateMechanites.cs" />
   </ItemGroup>

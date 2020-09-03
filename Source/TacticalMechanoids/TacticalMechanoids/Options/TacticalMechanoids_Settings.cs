@@ -11,6 +11,7 @@ namespace TacticalMechanoids
         public static bool TM_BelcherFlag = true;
         public static bool TM_CarrierFlag = true;
         public static bool TM_MechaniteDroneFlag = true;
+        public static bool TM_OracleFlag = true;
 
         public override void ExposeData()
         {
@@ -19,6 +20,7 @@ namespace TacticalMechanoids
             Scribe_Values.Look(ref TM_BelcherFlag, "TM_BelcherFlag", true, true);
             Scribe_Values.Look(ref TM_CarrierFlag, "TM_CarrierFlag", true, true);
             Scribe_Values.Look(ref TM_MechaniteDroneFlag, "TM_MechaniteDroneFlag", true, true);
+            Scribe_Values.Look(ref TM_OracleFlag, "TM_OracleFlag", true, true);
         }
         public static void DoWindowContents(Rect inRect)
         {
@@ -30,6 +32,7 @@ namespace TacticalMechanoids
             ls.CheckboxLabeled("TM_enableBelcher".Translate(), ref TM_BelcherFlag, null);
             ls.CheckboxLabeled("TM_enableCarrier".Translate(), ref TM_CarrierFlag, null);
             ls.CheckboxLabeled("TM_enableMechaniteDrone".Translate(), ref TM_MechaniteDroneFlag, null);
+            ls.CheckboxLabeled("TM_enableOracle".Translate(), ref TM_OracleFlag, null);
 
 
 
@@ -51,6 +54,10 @@ namespace TacticalMechanoids
             if (def_name == "TM_Carrier")
             {
                 return TM_CarrierFlag;
+            }
+            if (def_name == "TM_Oracle")
+            {
+                return TM_OracleFlag;
             }
 
             Log.Warning("MechanoidIsEnabled({}) found no matching def_name. Returning false, but this means you misnamed something somewhere.");

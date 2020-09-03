@@ -32,9 +32,9 @@ namespace TacticalMechanoids
                     GenSpawn.Spawn(pawn, this.parent.Position, parent.Map, WipeMode.Vanish);
 
                     Lord lord = null;
-                    if (pawn.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfMechanoids).Any((Pawn p) => p != pawn))
+                    if (this.parent is Pawn parentPawn)
                     {
-                        lord = ((Pawn)GenClosest.ClosestThing_Global(pawn.Position, pawn.Map.mapPawns.SpawnedPawnsInFaction(Faction.OfMechanoids), 99999f, (Thing p) => p != pawn && ((Pawn)p).GetLord() != null, null)).GetLord();
+                        lord = parentPawn.GetLord();
                     }
                     if (lord == null)
                     {

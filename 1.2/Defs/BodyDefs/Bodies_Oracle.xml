@@ -3,7 +3,7 @@
 
 
 	<BodyDef>
-		<defName>TM_Oracle</defName>
+		<defName>TM_OracleBody</defName>
 		<label>oracle</label>
 		<corePart>
 			<def>TM_MechanicalShell</def>
@@ -48,6 +48,8 @@
 							<coverage>0.05</coverage>
 						</li>
 					</parts>
+				</li>
+				<li>
 					<def>TM_PsyLattice</def>
 					<height>Middle</height>
 					<depth>Inside</depth>

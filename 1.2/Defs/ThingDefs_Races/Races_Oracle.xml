@@ -28,14 +28,14 @@
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
-				<defToChangeTo>Mech_Centiped</defToChangeTo>
+				<defToChangeTo>Mech_Centipede</defToChangeTo>
         <defToChangeFrom>TM_Oraclee</defToChangeFrom>
 			</li>
 		    <li Class="TacticalMechanoids.CompProperties_Floating">
 			    <isFloater>true</isFloater>
 			    <canCrossWater>true</canCrossWater>
 		    </li>
-			<li Class="TacticalMechanoids.CompProperties_PsycastOnAllies">
+			<li Class="TacticalMechanoids.CompProperties_PsycastOnFriendlies">
 				<psycastsToUse>
           <li>Focus</li>
         </psycastsToUse>

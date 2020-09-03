@@ -116,6 +116,7 @@
 	          <li>Beckon</li>
 	        </psycastsToUse>
 	        <psycastChance>0.25</psycastChance>
+	        <brainDamage>15</brainDamage>
 				</li>
 			</comps>
 	</ThingDef>

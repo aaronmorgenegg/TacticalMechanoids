@@ -14,15 +14,16 @@ namespace TacticalMechanoids
             }
         }
 
-        public void CastPsycast(Pawn pawn)
+        public void CastPsycast(Pawn hitPawn, Pawn sourcePawn)
         {
             if (Rand.Value < Props.psycastChance)
             {
-                if (pawn != null & pawn.health != null)
+                if (hitPawn != null & hitPawn.health != null)
                 {
                     string psycastName = Props.psycastsToUse[Rand.Range(0, Props.psycastsToUse.Count)];
-                    // TODO: Lookup psycast
-                    // TODO: Apply psycast to pawn
+                    AbilityDef psycastDef = DefDatabase<AbilityDef>.GetNamed(psycastName);
+                    Psycast psycast = new Psycast(sourcePawn, psycastDef);
+                    psycast.Activate(hitPawn, hitPawn);
                 }
             }
         }
