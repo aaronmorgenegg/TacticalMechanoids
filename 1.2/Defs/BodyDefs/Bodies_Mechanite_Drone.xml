@@ -103,15 +103,15 @@
 										<li>
 											<def>TM_SurgicalBlade</def>
 											<customLabel>first surgical knife</customLabel>
-											<groups>
-												<li>TM_SurgicalBlades</li>
-											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>first claw</customLabel>
 											<coverage>0.3</coverage>
+											<groups>
+												<li>TM_Claws</li>
+											</groups>
 										</li>
 									</parts>
 								</li>
@@ -142,15 +142,15 @@
 										<li>
 											<def>TM_SurgicalBlade</def>
 											<customLabel>second surgical knife</customLabel>
-											<groups>
-												<li>TM_SurgicalBlades</li>
-											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>second claw</customLabel>
 											<coverage>0.3</coverage>
+											<groups>
+												<li>TM_Claws</li>
+											</groups>
 										</li>
 									</parts>
 								</li>
@@ -181,15 +181,15 @@
 										<li>
 											<def>TM_SurgicalBlade</def>
 											<customLabel>third surgical knife</customLabel>
-											<groups>
-												<li>TM_SurgicalBlades</li>
-											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>third claw</customLabel>
 											<coverage>0.3</coverage>
+											<groups>
+												<li>TM_Claws</li>
+											</groups>
 										</li>
 									</parts>
 								</li>
@@ -220,15 +220,15 @@
 										<li>
 											<def>TM_SurgicalBlade</def>
 											<customLabel>fourth surgical knife</customLabel>
-											<groups>
-												<li>TM_SurgicalBlades</li>
-											</groups>
 											<coverage>0.1</coverage>
 										</li>
 										<li>
 											<def>TM_Claw</def>
 											<customLabel>fourth claw</customLabel>
 											<coverage>0.3</coverage>
+											<groups>
+												<li>TM_Claws</li>
+											</groups>
 										</li>
 									</parts>
 								</li>

@@ -14,13 +14,13 @@
     		</statBases>
     <tools>
       <li>
-        <label>surgical blade</label>
+        <label>claw</label>
         <capacities>
-	        <li>Cut</li>
+	        <li>Blunt</li>
         </capacities>
         <power>8</power>
         <cooldownTime>2</cooldownTime>
-        <linkedBodyPartsGroup>TM_SurgicalBlades</linkedBodyPartsGroup>
+        <linkedBodyPartsGroup>TM_Claws</linkedBodyPartsGroup>
       </li>
       <li>
         <label>head</label>
@@ -93,6 +93,10 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
+    <weaponMoney>9999~9999</weaponMoney>
+		<weaponTags>
+			<li>TM_MechanoidLaserCutter</li>
+		</weaponTags>
   </PawnKindDef>
 
 

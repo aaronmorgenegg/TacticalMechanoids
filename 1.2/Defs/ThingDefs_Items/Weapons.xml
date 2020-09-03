@@ -170,4 +170,64 @@
 		</tools>
 	</ThingDef>
 
+	<ThingDef>
+		<defName>TM_LaserCutter_Projectile</defName>
+		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<label>laser</label>
+		<projectile>
+			<damageDef>Cut</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+      <armorPenetrationBase>0.6</armorPenetrationBase>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGunWithQuality">
+		<defName>TM_MechanoidLaserCutter</defName>
+		<label>laser cutter</label>
+		<weaponTags>
+			<li>TM_MechanoidLaserCutter</li>
+		</weaponTags>
+		<description>A laser cutter, primarily used to repair mechanoids. Works as a mediocre ranged weapon.</description>
+		<graphicData>
+			<texPath>Items/Weapons/Mechanoid/LaserCutter/laser_cutter</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>2000</MarketValue>
+			<Mass>4</Mass>
+			<RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
+		</statBases>
+		<techLevel>Spacer</techLevel>
+		<menuHidden>True</menuHidden>
+		<generateCommonality>0.5</generateCommonality>
+		<tradeability>None</tradeability>
+		<verbs>
+			<li>
+
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>TM_LaserCutter_Projectile</defaultProjectile>
+        <burstShotCount>2</burstShotCount>
+				<warmupTime>0.3</warmupTime>
+				<range>20</range>
+				<muzzleFlashScale>4</muzzleFlashScale>
+	      <accuracyTouch>0.9</accuracyTouch>
+	      <accuracyShort>0.85</accuracyShort>
+	      <accuracyMedium>0.75</accuracyMedium>
+	      <accuracyLong>0.5</accuracyLong>
+
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>surgical blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
 </Defs>

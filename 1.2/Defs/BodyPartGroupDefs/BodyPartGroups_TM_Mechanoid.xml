@@ -3,9 +3,9 @@
 <Defs>
 
 	<BodyPartGroupDef>
-    <defName>TM_SurgicalBlades</defName>
-    <label>surgical blades</label>
-    <labelShort>surgical blade</labelShort>
+    <defName>TM_Claws</defName>
+    <label>claws</label>
+    <labelShort>claw</labelShort>
   </BodyPartGroupDef>
 
 	<BodyPartGroupDef>
