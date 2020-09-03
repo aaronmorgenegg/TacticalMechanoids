@@ -9,7 +9,6 @@ namespace TacticalMechanoids
     {
         public List<string> psycastsToUse = new List<string>();
         public float psycastChance = 0.1f;
-        public int brainDamage = 10;
 
         public CompProperties_PsycastOnEnemies()
         {

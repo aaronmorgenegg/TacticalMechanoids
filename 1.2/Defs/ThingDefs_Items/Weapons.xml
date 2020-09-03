@@ -99,8 +99,9 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<speed>40</speed>
-			<damageDef>Blunt</damageDef>
+			<damageDef>TM_PsionicDamage</damageDef>
 			<damageAmountBase>20</damageAmountBase>
+      <armorPenetrationBase>1.0</armorPenetrationBase>
 		</projectile>
 		<comps>
 				<li Class="TacticalMechanoids.CompProperties_PsycastOnEnemies">
@@ -115,8 +116,7 @@
 	          <li>TM_MechanoidBlindingPulse</li>
 	          <li>TM_MechanoidBeckon</li>
 	        </psycastsToUse>
-	        <psycastChance>0.25</psycastChance>
-	        <brainDamage>10</brainDamage>
+	        <psycastChance>0.50</psycastChance>
 				</li>
 			</comps>
 	</ThingDef>
@@ -127,7 +127,7 @@
 		<weaponTags>
 			<li>TM_MechanoidPsyLance</li>
 		</weaponTags>
-		<description>A psionic lance. Projects psionic energy, and can damage the brain directly.</description>
+		<description>A psionic lance. Projects psionic energy.</description>
 		<graphicData>
 			<texPath>Items/Weapons/Mechanoid/PsyLance/psy_lance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -151,10 +151,10 @@
 				<range>25.9</range>
 				<soundCast>PsycastPsychicEffect</soundCast>
 				<muzzleFlashScale>8</muzzleFlashScale>
-	      <accuracyTouch>0.75</accuracyTouch>
-	      <accuracyShort>0.90</accuracyShort>
-	      <accuracyMedium>0.90</accuracyMedium>
-	      <accuracyLong>0.90</accuracyLong>
+	      <accuracyTouch>1.0</accuracyTouch>
+	      <accuracyShort>1.0</accuracyShort>
+	      <accuracyMedium>1.0</accuracyMedium>
+	      <accuracyLong>1.0</accuracyLong>
 
 			</li>
 		</verbs>
