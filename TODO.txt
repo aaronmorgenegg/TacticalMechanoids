@@ -5,5 +5,5 @@ Messages translate aren't working - nonmechanoid message is off - print TM_NonMe
 Add good textures
 add sounds
 Add Dubs Hygiene compapibility - Toxic Sludge sets hygiene to 0, washing lowers ToxicSludge severity.
-Maybe a unique damageDef for ToxicSludge
 Hide Oracle behind ModLister.RoyaltyInstalled, or a royalty patch?
+Make belcher only attack biological targets? Since it is useless against turrets. Low priority because the AOE is so big.

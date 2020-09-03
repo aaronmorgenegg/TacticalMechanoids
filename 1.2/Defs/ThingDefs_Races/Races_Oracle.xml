@@ -46,7 +46,7 @@
       <intelligence>ToolUser</intelligence>
       <body>TM_OracleBody</body>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-      <baseBodySize>2.5</baseBodySize>
+      <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>1.5</baseHealthScale>
       <lifeStageAges>
 				<li>

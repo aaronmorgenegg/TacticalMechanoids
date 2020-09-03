@@ -37,6 +37,7 @@
 		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
 		<impactSoundType>Blunt</impactSoundType>
 		<armorCategory>Blunt</armorCategory>
+    <buildingDamageFactor>1.5</buildingDamageFactor>
 		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
 		<isRanged>true</isRanged>
 		<makesAnimalsFlee>true</makesAnimalsFlee>
