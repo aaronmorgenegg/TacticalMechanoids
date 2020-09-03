@@ -31,7 +31,7 @@
         <defToChangeFrom>TM_Carrier</defToChangeFrom>
 			</li>
 			<li Class="TacticalMechanoids.CompProperties_SpawnMechanoidsOnDeath">
-				<totalCombatPower>300</totalCombatPower>
+				<totalCombatPower>250</totalCombatPower>
 				<combatPowerVariance>0.25</combatPowerVariance>
         <mechanoidsToChooseFrom>
             <li>Mech_Scyther</li>
