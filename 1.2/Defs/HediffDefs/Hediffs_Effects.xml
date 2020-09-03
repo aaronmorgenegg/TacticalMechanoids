@@ -28,7 +28,7 @@
 		<defName>TM_ToxicSludge</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(0.4, 0.7, 0.2)</defaultLabelColor>
-		<description>Exposed to a slurry of toxic chemicals, including blistering and nerve agents. Immediate symptoms include reduced motor control, nausea, and difficulty breathing. Carcinoma, Dementia, chemical burns, and blisters may form after initial exposure.</description>
+		<description>Exposed to a slurry of toxic chemicals, including blistering and nerve agents. Immediate symptoms include reduced motor control, nausea, and difficulty breathing. Chemical burns, carcinoma, and dementia may occur for several days after initial exposure.</description>
 		<label>toxic sludge</label>
 		<tendable>true</tendable>
 		<makesSickThought>true</makesSickThought>
@@ -41,11 +41,9 @@
 				<severityPerDayTended>-0.75</severityPerDayTended>
 			</li>
 			<li Class="TacticalMechanoids.HediffCompProperties_BurnsOverTime">
-				<burnRate>4000</burnRate>
-				<burnDamage>25</burnDamage>
-				<blisterRate>15000</blisterRate>
+				<burnRate>5000</burnRate>
+				<burnDamage>20</burnDamage>
 				<burnVariance>0.25</burnVariance>
-				<blisterVariance>0.25</blisterVariance>
 				<burnDamageVariance>0.5</burnDamageVariance>
 			</li>
 
@@ -141,51 +139,6 @@
 				</capMods>
 			</li>
 
-		</stages>
-	</HediffDef>
-
-	<HediffDef ParentName="DiseaseBase">
-		<defName>TM_Blister</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>blister</label>
-		<description>Painful blisters formed as a result of a chemical burn.</description>
-		<defaultLabelColor>(1.0,0.0,0.0)</defaultLabelColor>
-		<scenarioCanAdd>false</scenarioCanAdd>
-		<maxSeverity>1.0</maxSeverity>
-		<initialSeverity>0.1</initialSeverity>
-		<tendable>true</tendable>
-		<makesSickThought>true</makesSickThought>
-		<comps>
-			<li Class="HediffCompProperties_Infecter">
-				<infectionChance>0.50</infectionChance>
-			</li>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.05</severityPerDay>
-			</li>
-			<li Class="HediffCompProperties_TendDuration">
-				<baseTendDurationHours>12</baseTendDurationHours>
-				<severityPerDayTended>-0.075</severityPerDayTended>
-			</li>
-		</comps>
-		<stages>
-				<li>
-					<label>minor</label>
-					<minSeverity>0.0</minSeverity>
-					<partEfficiencyOffset>-0.05</partEfficiencyOffset>
-					<painOffset>0.1</painOffset>
-				</li>
-				<li>
-					<label>moderate</label>
-					<minSeverity>0.2</minSeverity>
-					<partEfficiencyOffset>-0.15</partEfficiencyOffset>
-					<painOffset>0.3</painOffset>
-				</li>
-				<li>
-					<label>serious</label>
-					<minSeverity>0.5</minSeverity>
-					<partEfficiencyOffset>-0.30</partEfficiencyOffset>
-					<painOffset>0.5</painOffset>
-				</li>
 		</stages>
 	</HediffDef>
 

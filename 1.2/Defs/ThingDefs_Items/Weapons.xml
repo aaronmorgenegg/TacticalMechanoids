@@ -30,7 +30,7 @@
 		</graphicData>
 		<projectile>
 			<speed>40</speed>
-			<damageDef>Smoke</damageDef>
+			<damageDef>TM_ChemicalBurn</damageDef>
 			<damageAmountBase>0</damageAmountBase>
 			<explosionRadius>3</explosionRadius>
 			<preExplosionSpawnThingDef>Filth_Slime</preExplosionSpawnThingDef>

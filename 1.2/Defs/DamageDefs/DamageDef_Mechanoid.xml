@@ -1,6 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+	<DamageDef Name="TM_ChemicalBurn">
+		<defName>TM_ChemicalBurn</defName>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<label>chemical burn</label>
+		<hasForcefulImpact>false</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>false</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has died to chemical burns.</deathMessage>
+		<hediff>ChemicalBurn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>10</defaultDamage>
+		<defaultArmorPenetration>1.0</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellMote>Mote_BlastExtinguisher</explosionCellMote>
+		<explosionColorCenter>(0.2, 0.4, 0.2)</explosionColorCenter>
+		<explosionColorEdge>(0.3, 0.5, 0.3)</explosionColorEdge>
+		<soundExplosion>TM_SludgeCannon</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
 
 	<DamageDef>
 		<defName>TM_PsionicDamage</defName>
