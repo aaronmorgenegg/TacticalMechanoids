@@ -5,6 +5,7 @@ namespace TacticalMechanoids
 {
     public class CompPsycastOnFriendlies : ThingComp
     {
+        int tickCounter = 0;
 
         public CompProperties_PsycastOnFriendlies Props
         {
@@ -12,6 +13,17 @@ namespace TacticalMechanoids
             {
                 return (CompProperties_PsycastOnFriendlies)this.props;
             }
+        }
+
+        public override void CompTick()
+        {
+            base.CompTick();
+            /*
+            tickCounter++;
+            if (tickCounter < Props.psycastFrequency)
+            {
+                
+            }*/
         }
 
     }

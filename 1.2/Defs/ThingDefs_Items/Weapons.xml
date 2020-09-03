@@ -105,18 +105,18 @@
 		<comps>
 				<li Class="TacticalMechanoids.CompProperties_PsycastOnEnemies">
 					<psycastsToUse>
-	          <li>Berserk</li>
-	          <li>VertigoPulse</li>
-	          <li>Flashstorm</li>
-	          <li>ChaosSkip</li>
-	          <li>Berserk</li>
-	          <li>Burden</li>
-	          <li>Stun</li>
-	          <li>BlindingPulse</li>
-	          <li>Beckon</li>
+	          <li>TM_MechanoidBerserk</li>
+	          <li>TM_MechanoidVertigoPulse</li>
+	          <li>TM_MechanoidFlashstorm</li>
+	          <li>TM_MechanoidChaosSkip</li>
+	          <li>TM_MechanoidBerserk</li>
+	          <li>TM_MechanoidBurden</li>
+	          <li>TM_MechanoidStun</li>
+	          <li>TM_MechanoidBlindingPulse</li>
+	          <li>TM_MechanoidBeckon</li>
 	        </psycastsToUse>
 	        <psycastChance>0.25</psycastChance>
-	        <brainDamage>15</brainDamage>
+	        <brainDamage>10</brainDamage>
 				</li>
 			</comps>
 	</ThingDef>

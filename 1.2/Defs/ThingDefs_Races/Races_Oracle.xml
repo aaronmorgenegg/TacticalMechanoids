@@ -37,7 +37,7 @@
 		    </li>
 			<li Class="TacticalMechanoids.CompProperties_PsycastOnFriendlies">
 				<psycastsToUse>
-          <li>Focus</li>
+          <li>TM_MechanoidFocus</li>
         </psycastsToUse>
         <psycastFrequency>5000</psycastFrequency>
 			</li>

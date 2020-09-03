@@ -23,7 +23,7 @@ namespace TacticalMechanoids
                     string psycastName = Props.psycastsToUse[Rand.Range(0, Props.psycastsToUse.Count)];
                     AbilityDef psycastDef = DefDatabase<AbilityDef>.GetNamed(psycastName);
                     Psycast psycast = new Psycast(sourcePawn, psycastDef);
-                    psycast.Activate(hitPawn, hitPawn);
+                    psycast.Activate(hitPawn);
                 }
             }
         }

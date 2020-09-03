@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef ParentName="Stun">
+    <defName>TM_MechanoidStun</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="Burden">
+    <defName>TM_MechanoidBurden</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="BlindingPulse">
+    <defName>TM_MechanoidBlindingPulse</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="Beckon">
+    <defName>TM_MechanoidBeckon</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="VertigoPulse">
+    <defName>TM_MechanoidVertigoPulse</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="ChaosSkip">
+    <defName>TM_MechanoidChaosSkip</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="Focus">
+    <defName>TM_MechanoidFocus</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="Berserk">
+    <defName>TM_MechanoidBerserk</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+	<AbilityDef ParentName="Flashstorm">
+		<defName>TM_MechanoidFlashstorm</defName>
+		<statBases>
+			<Ability_EntropyGain>0</Ability_EntropyGain>
+			<Ability_PsyfocusCost>0.00</Ability_PsyfocusCost>
+		</statBases>
+	</AbilityDef>
+
+</Defs>

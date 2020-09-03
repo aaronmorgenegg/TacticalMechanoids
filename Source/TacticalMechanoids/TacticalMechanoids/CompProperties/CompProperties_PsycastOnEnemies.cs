@@ -15,5 +15,6 @@ namespace TacticalMechanoids
         {
             this.compClass = typeof(CompPsycastOnEnemies);
         }
+
     }
 }
