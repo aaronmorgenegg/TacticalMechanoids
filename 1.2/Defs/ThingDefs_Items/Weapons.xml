@@ -170,15 +170,27 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef>
+	<ThingDef ParentName="BaseBullet" Class="JecsTools.ThingDef_LaserProjectile">
 		<defName>TM_LaserCutter_Projectile</defName>
 		<thingClass>JecsTools.Projectile_Laser</thingClass>
 		<label>laser</label>
+		<graphicData>
+			<texPath>Items/Weapons/Mechanoid/LaserCutter/laser_projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
 		<projectile>
-			<damageDef>Cut</damageDef>
+			<damageDef>Burn</damageDef>
 			<damageAmountBase>6</damageAmountBase>
-      <armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>500</speed>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
 		</projectile>
+		<preFiringInitialIntensity>0</preFiringInitialIntensity>
+		<preFiringFinalIntensity>40</preFiringFinalIntensity>
+		<postFiringInitialIntensity>80</postFiringInitialIntensity>
+		<postFiringFinalIntensity>0</postFiringFinalIntensity>
+		<preFiringDuration>10</preFiringDuration>
+		<postFiringDuration>20</postFiringDuration>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGunWithQuality">
@@ -207,14 +219,15 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>TM_LaserCutter_Projectile</defaultProjectile>
-        <burstShotCount>2</burstShotCount>
+        <soundCast>TM_LaserCutter</soundCast>
+        <burstShotCount>4</burstShotCount>
 				<warmupTime>0.3</warmupTime>
 				<range>20</range>
 				<muzzleFlashScale>4</muzzleFlashScale>
-	      <accuracyTouch>0.9</accuracyTouch>
-	      <accuracyShort>0.85</accuracyShort>
-	      <accuracyMedium>0.75</accuracyMedium>
-	      <accuracyLong>0.5</accuracyLong>
+	      <accuracyTouch>0.6</accuracyTouch>
+	      <accuracyShort>0.5</accuracyShort>
+	      <accuracyMedium>0.25</accuracyMedium>
+	      <accuracyLong>0.1</accuracyLong>
 
 			</li>
 		</verbs>
