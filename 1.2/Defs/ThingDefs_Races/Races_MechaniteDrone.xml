@@ -18,7 +18,7 @@
         <capacities>
 	        <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>6</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>TM_Claws</linkedBodyPartsGroup>
       </li>
@@ -28,7 +28,7 @@
           <li>Blunt</li>
         </capacities>
         <power>4</power>
-        <cooldownTime>3</cooldownTime>
+        <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
         <chanceFactor>0.2</chanceFactor>
@@ -37,7 +37,7 @@
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
-				<defToChangeTo>Mech_Pikeman</defToChangeTo>
+				<defToChangeTo>Mech_Lancer</defToChangeTo>
         <defToChangeFrom>TM_MechaniteDrone</defToChangeFrom>
 			</li>
 		    <li Class="TacticalMechanoids.CompProperties_Floating">

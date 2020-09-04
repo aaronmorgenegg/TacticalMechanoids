@@ -43,4 +43,28 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
 
+	<DamageDef Name="TM_LightningDamage">
+		<defName>TM_LightningDamage</defName>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<label>shock</label>
+		<hasForcefulImpact>True</hasForcefulImpact>
+		<makesBlood>false</makesBlood>
+		<canInterruptJobs>False</canInterruptJobs>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has died to an electric shock.</deathMessage>
+		<hediff>Burn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<armorCategory>Heat</armorCategory>
+		<minDamageToFragment>5</minDamageToFragment>
+		<defaultDamage>50</defaultDamage>
+		<defaultArmorPenetration>0.8</defaultArmorPenetration>
+		<explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
+		<explosionCellMote>Mote_LightningGlow</explosionCellMote>
+		<explosionColorCenter>(0.5, 0.6, 1.0)</explosionColorCenter>
+		<explosionColorEdge>(0.4, 0.5, 0.8)</explosionColorEdge>
+		<soundExplosion>Thunder_OnMap</soundExplosion>
+		<combatLogRules>Damage_Flame</combatLogRules>
+		<canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+	</DamageDef>
+
 </Defs>
