@@ -254,9 +254,9 @@
 		</graphicData>
 		<projectile>
 			<damageDef>TM_LightningDamage</damageDef>
-			<damageAmountBase>2</damageAmountBase>
+			<damageAmountBase>20</damageAmountBase>
 			<speed>500</speed>
-      <armorPenetrationBase>0.75</armorPenetrationBase>
+      <armorPenetrationBase>0.5</armorPenetrationBase>
 			<explosionRadius>1</explosionRadius>
 		</projectile>
 		<preFiringInitialIntensity>20</preFiringInitialIntensity>
