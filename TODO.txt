@@ -1,4 +1,3 @@
-TM_MechanoidLaserCutter - Weapon for MechaniteDrone - inherit from VWE - Laser?
 Patchers to add mechanoids to mech cluster spawners: https://github.com/juanosarg/AlphaAnimals/blob/master/1.2/Patches/AlphaMechanoidsPatch.xml
 Messages translate aren't working - nonmechanoid message is off - print TM_NonMech....etc.
 	-Options menu looks funky too, might be related

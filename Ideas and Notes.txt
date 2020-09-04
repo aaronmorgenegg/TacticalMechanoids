@@ -102,7 +102,7 @@ Acid mech(name?):
 Mech Mortar(Name?)
 	- A turret in mechanoid clusters that fires other mechanoids at you. Like a regular mortar that also spawns a weak melee mechanoid.
 
-Shellshock(Name?)
+Shellshock(Name?) Minelayer bot.
 	- A slow moving, armored, tortoise? shaped mechanoid with a powerful explosive gun, also periodically lays mines where it walks.
 
 Events:
