@@ -5,7 +5,6 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>TM_Dynamo</defName>
     <label>dynamo</label>
-    <description>A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans, and is particularly effective against turrets.</description>
     <statBases>
     			<MoveSpeed>4.5</MoveSpeed>
     			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
@@ -27,7 +26,7 @@
     </tools>
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
-				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<!-- Change to this pawn if Dynamo is disabled in options -->
 				<defToChangeTo>Mech_Lancer</defToChangeTo>
         <defToChangeFrom>TM_Dynamo</defToChangeFrom>
 			</li>

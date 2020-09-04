@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="0JecsTools">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\Mods\TacticalMechanoids-DEV\Reference\JecsTools-master\1.2\Assemblies\0JecsTools.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="AbilityUser">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\Mods\TacticalMechanoids-DEV\Reference\JecsTools-master\1.2\Assemblies\AbilityUser.dll</HintPath>
@@ -62,6 +63,7 @@
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Games\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +81,7 @@
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Options\TacticalMechanoids_SettingsController.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Hediffs\HediffComp_ConstructiveMechanites.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\PawnCapacityWorker\PawnCapacityWorker_MechaniteGeneration.cs" />
+    <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_Lightning.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_PsyBlast.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\Projectiles\Projectile_SludgeBullet.cs" />
     <Compile Include="TacticalMechanoids\TacticalMechanoids\ThingComps\ThingComp_ChangeDef.cs" />

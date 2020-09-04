@@ -12,7 +12,7 @@
 		<bleedRate>0</bleedRate>
 		<alive>false</alive>
 		<tags>
-			<li>ManipulationLimbSegment</li>
+			<li>ManipulationLimbCore</li>
 		</tags>
 	</BodyPartDef>
 

@@ -245,26 +245,29 @@
 
 	<ThingDef ParentName="TM_BaseMechProjectile" Class="JecsTools.ThingDef_LaserProjectile">
 		<defName>TM_Lightning_Projectile</defName>
-		<thingClass>JecsTools.Projectile_Laser</thingClass>
+		<thingClass>TacticalMechanoids.Projectile_Lightning</thingClass>
 		<label>lightning bolt</label>
 		<graphicData>
-			<texPath>Items/Weapons/Mechanoid/Dynamo/lightning_projectile</texPath>
+			<texPath>Items/Weapons/Mechanoid/ChargeCoils/lightning_projectile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 		</graphicData>
 		<projectile>
 			<damageDef>TM_LightningDamage</damageDef>
-			<damageAmountBase>50</damageAmountBase>
+			<damageAmountBase>2</damageAmountBase>
 			<speed>500</speed>
-      <armorPenetrationBase>0.8</armorPenetrationBase>
-			<explosionRadius>2</explosionRadius>
+      <armorPenetrationBase>0.75</armorPenetrationBase>
+			<explosionRadius>1</explosionRadius>
 		</projectile>
 		<preFiringInitialIntensity>20</preFiringInitialIntensity>
 		<preFiringFinalIntensity>100</preFiringFinalIntensity>
 		<postFiringInitialIntensity>40</postFiringInitialIntensity>
 		<postFiringFinalIntensity>0</postFiringFinalIntensity>
 		<preFiringDuration>30</preFiringDuration>
+		<StartFireChance>0.75</StartFireChance>
+		<CanStartFire>true</CanStartFire>
 		<postFiringDuration>20</postFiringDuration>
+		<createsExplosion>true</createsExplosion>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGunWithQuality">
@@ -275,7 +278,7 @@
 		</weaponTags>
 		<description>Electrical weapon that generates inaccurate, but devastating lightning bolts. Takes a long time to accumulate charged particles between lightning bolts.</description>
 		<graphicData>
-			<texPath>Items/Weapons/Mechanoid/Dynamo/charge_coils</texPath>
+			<texPath>Items/Weapons/Mechanoid/ChargeCoils/charge_coils</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -295,14 +298,13 @@
 				<defaultProjectile>TM_Lightning_Projectile</defaultProjectile>
         <soundCast>Thunder_OnMap</soundCast>
         <burstShotCount>1</burstShotCount>
-				<warmupTime>0.3</warmupTime>
+				<warmupTime>5.0</warmupTime>
 				<range>44.9</range>
-				<forcedMissRadius>8</forcedMissRadius>
 				<muzzleFlashScale>20</muzzleFlashScale>
-	      <accuracyTouch>0.65</accuracyTouch>
-	      <accuracyShort>0.4</accuracyShort>
-	      <accuracyMedium>0.25</accuracyMedium>
-	      <accuracyLong>0.1</accuracyLong>
+	      <accuracyTouch>0.50</accuracyTouch>
+	      <accuracyShort>0.15</accuracyShort>
+	      <accuracyMedium>0.05</accuracyMedium>
+	      <accuracyLong>0.02</accuracyLong>
 
 			</li>
 		</verbs>

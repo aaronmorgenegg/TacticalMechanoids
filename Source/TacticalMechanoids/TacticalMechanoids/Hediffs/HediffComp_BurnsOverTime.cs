@@ -25,7 +25,7 @@ namespace TacticalMechanoids
                 currentBurnVariance = Rand.Range(-Props.burnVariance, Props.burnVariance);
                 if (Pawn.health != null)
                 {
-                    Pawn.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed("TM_ChemicalBurn"), (Props.burnDamage * Rand.Range(-Props.burnDamageVariance, Props.burnDamageVariance) * parent.Severity), 0.9f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
+                    Pawn.TakeDamage(new DamageInfo(DefDatabase<DamageDef>.GetNamed("TM_ChemicalBurn"), (Props.burnDamage * Rand.Range(1-Props.burnDamageVariance, 1+Props.burnDamageVariance) * parent.Severity), 0.9f, -1f, null, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null));
                 }
             }
         }

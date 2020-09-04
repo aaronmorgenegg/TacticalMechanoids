@@ -7,5 +7,5 @@
 	<TM_enableMechaniteDrone>Enable Mechanite Drone Spawns</TM_enableMechaniteDrone>
 	<TM_enableOracle>Enable Oracle Spawns</TM_enableOracle>
 	<TM_enableDynamo>Enable Dynamo Spawns</TM_enableDynamo>
-	<TM_DevelopedBlister>{} has developed blisters from a chemical burn.</TM_DevelopedBlister>
+	<TM_pawnSufferingHeartAttack>{} has had a heart attack after being struck by lightning.</TM_pawnSufferingHeartAttack>
 </LanguageData>
