@@ -275,7 +275,7 @@
 		</weaponTags>
 		<description>Electrical weapon that generates inaccurate, but devastating lightning bolts. Takes a long time to accumulate charged particles between lightning bolts.</description>
 		<graphicData>
-			<texPath>Items/Weapons/Mechanoid/Dynamo/charge_accumulator</texPath>
+			<texPath>Items/Weapons/Mechanoid/Dynamo/charge_coils</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
