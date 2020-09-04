@@ -8,7 +8,7 @@ namespace TacticalMechanoids
     {
         public override void PawnDied(Corpse corpse)
         {
-            if (corpse.InnerPawn.GetComp<CompSpawnMechanoidsOnDeath>() is CompSpawnMechanoidsOnDeath spawnComp && spawnComp != null)
+            if (corpse != null && corpse.InnerPawn.GetComp<CompSpawnMechanoidsOnDeath>() is CompSpawnMechanoidsOnDeath spawnComp && spawnComp != null)
             {
                 foreach (Pawn pawnToSpawn in spawnComp.pawnsToSpawn)
                 {

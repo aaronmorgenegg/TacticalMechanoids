@@ -23,7 +23,7 @@ namespace TacticalMechanoids
             base.CompTick();
             if (spawnedMechanoidsCombatPower == 0)
             {
-                if (this.parent is Pawn pawn)
+                if (this.parent is Pawn pawn && pawn != null && pawn.GetLord() != null)
                 {
                     float randVariance = Rand.Range(1 - Props.combatPowerVariance, 1 + Props.combatPowerVariance);
 

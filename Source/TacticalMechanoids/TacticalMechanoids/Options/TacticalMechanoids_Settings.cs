@@ -13,6 +13,7 @@ namespace TacticalMechanoids
         public static bool TM_DynamoFlag = true;
         public static bool TM_MechaniteDroneFlag = true;
         public static bool TM_OracleFlag = true;
+        public static bool TM_ShredderFlag = true;
 
         public override void ExposeData()
         {
@@ -23,6 +24,7 @@ namespace TacticalMechanoids
             Scribe_Values.Look(ref TM_DynamoFlag, "TM_DynamoFlag", true, true);
             Scribe_Values.Look(ref TM_MechaniteDroneFlag, "TM_MechaniteDroneFlag", true, true);
             Scribe_Values.Look(ref TM_OracleFlag, "TM_OracleFlag", true, true);
+            Scribe_Values.Look(ref TM_ShredderFlag, "TM_ShredderFlag", true, true);
         }
         public static void DoWindowContents(Rect inRect)
         {
@@ -36,6 +38,7 @@ namespace TacticalMechanoids
             ls.CheckboxLabeled("TM_enbaleDynamo".Translate(), ref TM_DynamoFlag, null);
             ls.CheckboxLabeled("TM_enableMechaniteDrone".Translate(), ref TM_MechaniteDroneFlag, null);
             ls.CheckboxLabeled("TM_enableOracle".Translate(), ref TM_OracleFlag, null);
+            ls.CheckboxLabeled("TM_enableShredder".Translate(), ref TM_ShredderFlag, null);
 
 
 
@@ -45,30 +48,14 @@ namespace TacticalMechanoids
 
         public static bool MechanoidIsEnabled(string def_name)
         {
-            // TODO: if statement chain is gross, try turning this into a dictionary or something
-            if (def_name == "TM_MechaniteDrone")
-            {
-                return TM_MechaniteDroneFlag;
-            }
-            if (def_name == "TM_Belcher")
-            {
-                return TM_BelcherFlag;
-            }
-            if (def_name == "TM_Carrier")
-            {
-                return TM_CarrierFlag;
-            }
-            if (def_name == "TM_Oracle")
-            {
-                return TM_OracleFlag;
-            }
-            if (def_name == "TM_Dynamo")
-            {
-                return TM_DynamoFlag;
-            }
-
-            Log.Warning("MechanoidIsEnabled({}) found no matching def_name. Returning false, but this means you misnamed something somewhere.");
-            return false;
+            return 
+            def_name == "TM_Belcher" ? TM_BelcherFlag :
+            def_name == "TM_Carrier" ? TM_CarrierFlag :
+            def_name == "TM_Dynamo" ? TM_DynamoFlag :
+            def_name == "TM_MechaniteDrone" ? TM_MechaniteDroneFlag :
+            def_name == "TM_Oracle" ? TM_OracleFlag :
+            def_name == "TM_Shredder" ? TM_ShredderFlag :
+            false;
         }
 
 
