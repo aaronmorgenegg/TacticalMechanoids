@@ -258,7 +258,6 @@
 			<speed>500</speed>
       <armorPenetrationBase>0.8</armorPenetrationBase>
 			<explosionRadius>2</explosionRadius>
-			<forcedMissRadius>8</forcedMissRadius>
 		</projectile>
 		<preFiringInitialIntensity>20</preFiringInitialIntensity>
 		<preFiringFinalIntensity>100</preFiringFinalIntensity>
@@ -298,6 +297,7 @@
         <burstShotCount>1</burstShotCount>
 				<warmupTime>0.3</warmupTime>
 				<range>44.9</range>
+				<forcedMissRadius>8</forcedMissRadius>
 				<muzzleFlashScale>20</muzzleFlashScale>
 	      <accuracyTouch>0.65</accuracyTouch>
 	      <accuracyShort>0.4</accuracyShort>
