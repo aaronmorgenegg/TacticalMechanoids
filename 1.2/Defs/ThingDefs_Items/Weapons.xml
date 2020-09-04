@@ -263,10 +263,10 @@
 		<preFiringFinalIntensity>100</preFiringFinalIntensity>
 		<postFiringInitialIntensity>40</postFiringInitialIntensity>
 		<postFiringFinalIntensity>0</postFiringFinalIntensity>
-		<preFiringDuration>30</preFiringDuration>
+		<preFiringDuration>5</preFiringDuration>
 		<StartFireChance>0.75</StartFireChance>
 		<CanStartFire>true</CanStartFire>
-		<postFiringDuration>20</postFiringDuration>
+		<postFiringDuration>10</postFiringDuration>
 		<createsExplosion>true</createsExplosion>
 	</ThingDef>
 
@@ -299,7 +299,7 @@
         <soundCast>Thunder_OnMap</soundCast>
         <burstShotCount>1</burstShotCount>
 				<warmupTime>5.0</warmupTime>
-				<range>44.9</range>
+				<range>24.9</range>
 				<muzzleFlashScale>20</muzzleFlashScale>
 	      <accuracyTouch>0.50</accuracyTouch>
 	      <accuracyShort>0.15</accuracyShort>
