@@ -5,6 +5,7 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>TM_Dynamo</defName>
     <label>dynamo</label>
+    <description>A small, fast-moving mechanoid armed with a pair of hi-tech electrical coils. The arc of lightning it generates can incapactiate humans and turrets, as well as fellow mechanoids.</description>
     <statBases>
     			<MoveSpeed>4.5</MoveSpeed>
     			<ArmorRating_Blunt>0.30</ArmorRating_Blunt>
