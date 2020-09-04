@@ -276,7 +276,7 @@
 		<weaponTags>
 			<li>TM_MechanoidChargeCoils</li>
 		</weaponTags>
-		<description>Electrical weapon that generates inaccurate, but devastating lightning bolts. Takes a long time to accumulate charged particles between lightning bolts.</description>
+		<description>Electrical weapon that generates inaccurate, but devastating lightning bolts. Takes a long time to accumulate charged particles between shots.</description>
 		<graphicData>
 			<texPath>Items/Weapons/Mechanoid/ChargeCoils/charge_coils</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
