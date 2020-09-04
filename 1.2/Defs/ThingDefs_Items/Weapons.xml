@@ -258,6 +258,7 @@
 			<speed>500</speed>
       <armorPenetrationBase>0.8</armorPenetrationBase>
 			<explosionRadius>2</explosionRadius>
+			<forcedMissRadius>8</forcedMissRadius>
 		</projectile>
 		<preFiringInitialIntensity>20</preFiringInitialIntensity>
 		<preFiringFinalIntensity>100</preFiringFinalIntensity>
@@ -268,12 +269,12 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseGunWithQuality">
-		<defName>TM_MechanoidChargeAccumulator</defName>
-		<label>charge accumulator</label>
+		<defName>TM_MechanoidChargeCoils</defName>
+		<label>charge coils</label>
 		<weaponTags>
-			<li>TM_MechanoidChargeAccumulator</li>
+			<li>TM_MechanoidChargeCoils</li>
 		</weaponTags>
-		<description>Powerful weapon that generates a charge seperation by accumulating charged particles, before releasing an inaccurate, but deadly bolt of lightning.</description>
+		<description>Electrical weapon that generates inaccurate, but devastating lightning bolts. Takes a long time to accumulate charged particles between lightning bolts.</description>
 		<graphicData>
 			<texPath>Items/Weapons/Mechanoid/Dynamo/charge_accumulator</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

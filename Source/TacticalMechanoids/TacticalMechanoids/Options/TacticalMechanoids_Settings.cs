@@ -10,6 +10,7 @@ namespace TacticalMechanoids
     {
         public static bool TM_BelcherFlag = true;
         public static bool TM_CarrierFlag = true;
+        public static bool TM_DynamoFlag = true;
         public static bool TM_MechaniteDroneFlag = true;
         public static bool TM_OracleFlag = true;
 
@@ -19,6 +20,7 @@ namespace TacticalMechanoids
 
             Scribe_Values.Look(ref TM_BelcherFlag, "TM_BelcherFlag", true, true);
             Scribe_Values.Look(ref TM_CarrierFlag, "TM_CarrierFlag", true, true);
+            Scribe_Values.Look(ref TM_DynamoFlag, "TM_DynamoFlag", true, true);
             Scribe_Values.Look(ref TM_MechaniteDroneFlag, "TM_MechaniteDroneFlag", true, true);
             Scribe_Values.Look(ref TM_OracleFlag, "TM_OracleFlag", true, true);
         }
@@ -31,6 +33,7 @@ namespace TacticalMechanoids
 
             ls.CheckboxLabeled("TM_enableBelcher".Translate(), ref TM_BelcherFlag, null);
             ls.CheckboxLabeled("TM_enableCarrier".Translate(), ref TM_CarrierFlag, null);
+            ls.CheckboxLabeled("TM_enbaleDynamo".Translate(), ref TM_DynamoFlag, null);
             ls.CheckboxLabeled("TM_enableMechaniteDrone".Translate(), ref TM_MechaniteDroneFlag, null);
             ls.CheckboxLabeled("TM_enableOracle".Translate(), ref TM_OracleFlag, null);
 
@@ -59,12 +62,14 @@ namespace TacticalMechanoids
             {
                 return TM_OracleFlag;
             }
+            if (def_name == "TM_Dynamo")
+            {
+                return TM_DynamoFlag;
+            }
 
             Log.Warning("MechanoidIsEnabled({}) found no matching def_name. Returning false, but this means you misnamed something somewhere.");
             return false;
         }
-
-
 
 
     }
