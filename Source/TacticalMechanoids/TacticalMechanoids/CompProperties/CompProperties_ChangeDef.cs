@@ -8,6 +8,7 @@ namespace TacticalMechanoids
 
         public string defToChangeTo = "";
         public string defToChangeFrom = "";
+        public int numToSpawn = 1;
 
 
         public CompProperties_ChangeDef()

@@ -27,8 +27,9 @@
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
-				<defToChangeTo>Mech_Centipede</defToChangeTo>
+				<defToChangeTo>Mech_Scyther</defToChangeTo>
         <defToChangeFrom>TM_Carrier</defToChangeFrom>
+        <numToSpawn>3</numToSpawn>
 			</li>
 			<li Class="TacticalMechanoids.CompProperties_SpawnMechanoidsOnDeath">
 				<totalCombatPower>250</totalCombatPower>

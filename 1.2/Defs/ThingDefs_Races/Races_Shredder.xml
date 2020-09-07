@@ -41,6 +41,7 @@
 				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
 				<defToChangeTo>Mech_Scyther</defToChangeTo>
         <defToChangeFrom>TM_Shredder</defToChangeFrom>
+				<numToSpawn>2</numToSpawn>
 			</li>
 		</comps>
     <race>
@@ -74,7 +75,7 @@
     <defName>TM_Shredder</defName>
     <label>shredder</label>
     <race>TM_Shredder</race>
-    <combatPower>300</combatPower>
+    <combatPower>350</combatPower>
     <lifeStages>
       <li>
         <bodyGraphicData>
