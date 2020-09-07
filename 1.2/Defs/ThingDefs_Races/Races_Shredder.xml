@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>TM_Shredder</defName>
+    <label>shredder</label>
+    <description>The shredder was designed to exterminate insectoid hives, burrowing into their tunnels with jaws made entirely of whirling, razor-sharp blades. Those who come face to face with a Shredder are lucky to escape with missing limbs - most are turned into mincemeat.</description>
+    <statBases>
+    			<MoveSpeed>3.0</MoveSpeed>
+    			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+    			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
+    			<PsychicSensitivity>0.5</PsychicSensitivity>
+    		</statBases>
+    <tools>
+      <li>
+        <label>jaw blades</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Stab</li>
+        </capacities>
+        <power>40</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>TM_JawBlades</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+    </tools>
+	<comps>
+			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
+				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<defToChangeTo>Mech_Scyther</defToChangeTo>
+        <defToChangeFrom>TM_Shredder</defToChangeFrom>
+			</li>
+		</comps>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <body>TM_ShredderBody</body>
+			<thinkTreeMain>Mechanoid</thinkTreeMain>
+      <baseBodySize>1.5</baseBodySize>
+      <baseHealthScale>1.5</baseHealthScale>
+      <lifeStageAges>
+				<li>
+					<def>MechanoidFullyFormed</def>
+					<minAge>0</minAge>
+					<soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+					<soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+					<soundCall>Pawn_Mech_Scyther_Call</soundCall>
+				</li>
+			</lifeStageAges>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+    </race>
+    <butcherProducts>
+			<Steel>30</Steel>
+			<Plasteel>5</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>TM_Shredder</defName>
+    <label>shredder</label>
+    <race>TM_Shredder</race>
+    <combatPower>300</combatPower>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Mechanoid/Shredder/shredder</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.5</drawSize>
+          <shadowData>
+            <volume>(0.4, 0.4, 0.4)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+
+
+
+</Defs>

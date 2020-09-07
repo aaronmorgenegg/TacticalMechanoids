@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<BodyDef>
+		<defName>TM_ShredderBody</defName>
+		<label>oracle</label>
+		<corePart>
+			<def>MechanicalThoraxCanManipulate</def>
+			<height>bottom</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MechanicalHead</def>
+					<height>Middle</height>
+					<coverage>0.40</coverage>
+					<groups>
+						<li>HeadAttackTool</li>
+					</groups>
+					<parts>
+						<li>
+							<def>ArtificialBrain</def>
+							<coverage>0.05</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SightSensor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>TM_JawBlades</def>
+							<coverage>0.5</coverage>
+							<groups>
+								<li>TM_JawBlades</li>
+							</groups>
+					</parts>
+					<def>
+				<li>
+					<def>TM_ArmorPlating</def>
+					<coverage>0.34</coverage>
+					<parts>
+						<li>
+							<def>TM_MechanicalUnderbelly</def>
+							<customLabel>underbelly</customLabel>
+							<coverage>0.35</coverage>
+						</li>
+					</parts>
+				</li>
+				</li>
+				<li>
+					<def>Reactor</def>
+					<coverage>0.06</coverage>
+					<depth>Inside</depth>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+</Defs>

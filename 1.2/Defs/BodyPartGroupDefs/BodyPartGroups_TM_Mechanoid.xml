@@ -14,4 +14,10 @@
     <labelShort>wheel</labelShort>
   </BodyPartGroupDef>
 
+	<BodyPartGroupDef>
+    <defName>TM_JawBlades</defName>
+    <label>jaw blades</label>
+    <labelShort>jaw blade</labelShort>
+  </BodyPartGroupDef>
+
 </Defs>

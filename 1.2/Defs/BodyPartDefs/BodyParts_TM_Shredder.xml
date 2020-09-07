@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<BodyPartDef>
+		<defName>TM_JawBlades</defName>
+		<label>jaw blades</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+	<BodyPartDef>
+		<defName>TM_MechanicalUnderbelly</defName>
+		<label>underbelly</label>
+		<hitPoints>30</hitPoints>
+		<permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+		<skinCovered>false</skinCovered>
+		<solid>true</solid>
+		<bleedRate>0</bleedRate>
+		<alive>false</alive>
+		<tags>
+			<li>MovingLimbCore</li>
+			<li>ManipulationLimbSegment</li>
+		</tags>
+	</BodyPartDef>
+
+</Defs>
