@@ -7,3 +7,6 @@ Add Dubs Hygiene compapibility - Toxic Sludge sets hygiene to 0, washing lowers 
 Hide Oracle behind ModLister.RoyaltyInstalled, or a royalty patch?
 Make belcher only attack biological targets? Since it is useless against turrets. Low priority because the AOE is so big.
 re-review your own code once it's gotten far enough. Modify sounds/descriptions/graphics/balance etc.
+Add burrow-towards-ranged-attackers functionality to shredder
+add butcher-human-corpses functionality to shredder
+add sapper mechanic to shredder
