@@ -4,10 +4,10 @@
 
 	<BodyDef>
 		<defName>TM_ShredderBody</defName>
-		<label>oracle</label>
+		<label>shredder</label>
 		<corePart>
 			<def>MechanicalThoraxCanManipulate</def>
-			<height>bottom</height>
+			<height>Bottom</height>
 			<depth>Outside</depth>
 			<parts>
 				<li>
@@ -53,8 +53,9 @@
 							<groups>
 								<li>TM_JawBlades</li>
 							</groups>
+						</li>
 					</parts>
-					<def>
+				</li>
 				<li>
 					<def>TM_ArmorPlating</def>
 					<coverage>0.34</coverage>
@@ -65,7 +66,6 @@
 							<coverage>0.35</coverage>
 						</li>
 					</parts>
-				</li>
 				</li>
 				<li>
 					<def>Reactor</def>

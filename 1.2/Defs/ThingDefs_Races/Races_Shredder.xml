@@ -7,7 +7,7 @@
     <label>shredder</label>
     <description>The shredder was designed to exterminate insectoid hives, burrowing into their tunnels with jaws made entirely of whirling, razor-sharp blades. Those who come face to face with a Shredder are lucky to escape with missing limbs - most are turned into mincemeat.</description>
     <statBases>
-    			<MoveSpeed>3.0</MoveSpeed>
+    			<MoveSpeed>2.5</MoveSpeed>
     			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
     			<ArmorRating_Sharp>0.50</ArmorRating_Sharp>
     			<PsychicSensitivity>0.5</PsychicSensitivity>
@@ -48,8 +48,8 @@
       <intelligence>ToolUser</intelligence>
       <body>TM_ShredderBody</body>
 			<thinkTreeMain>Mechanoid</thinkTreeMain>
-      <baseBodySize>1.5</baseBodySize>
-      <baseHealthScale>1.5</baseHealthScale>
+      <baseBodySize>3.5</baseBodySize>
+      <baseHealthScale>2.0</baseHealthScale>
       <lifeStageAges>
 				<li>
 					<def>MechanoidFullyFormed</def>
@@ -81,7 +81,7 @@
         <bodyGraphicData>
           <texPath>Mechanoid/Shredder/shredder</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.5</drawSize>
+          <drawSize>3.5</drawSize>
           <shadowData>
             <volume>(0.4, 0.4, 0.4)</volume>
           </shadowData>
