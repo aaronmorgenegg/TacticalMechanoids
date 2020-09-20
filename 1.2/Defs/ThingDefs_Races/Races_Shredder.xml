@@ -29,7 +29,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>15</power>
+        <power>16</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -38,7 +38,7 @@
     </tools>
 	<comps>
 			<li Class="TacticalMechanoids.CompProperties_ChangeDef">
-				<!-- Change to this pawn if Mechanite Drone is disabled in options -->
+				<!-- Change to this pawn if Shredder is disabled in options -->
 				<defToChangeTo>Mech_Scyther</defToChangeTo>
         <defToChangeFrom>TM_Shredder</defToChangeFrom>
 				<numToSpawn>2</numToSpawn>
@@ -76,6 +76,7 @@
     <label>shredder</label>
     <race>TM_Shredder</race>
     <combatPower>350</combatPower>
+		<canBeSapper>true</canBeSapper>
     <lifeStages>
       <li>
         <bodyGraphicData>
