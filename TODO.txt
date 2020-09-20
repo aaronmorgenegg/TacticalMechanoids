@@ -9,4 +9,3 @@ Make belcher only attack biological targets? Since it is useless against turrets
 re-review your own code once it's gotten far enough. Modify sounds/descriptions/graphics/balance etc.
 Add burrow-towards-ranged-attackers functionality to shredder
 add butcher-human-corpses functionality to shredder
-add sapper mechanic to shredder

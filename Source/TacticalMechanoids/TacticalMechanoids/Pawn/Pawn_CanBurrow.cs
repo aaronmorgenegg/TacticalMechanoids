@@ -12,9 +12,10 @@ namespace TacticalMechanoids
 
             if (!Dead)
             {
-                // TODO: If attacker was ranged and If not in melee range with an enemy and burrowChance * totalDamageDealt <= rand.value
-                // TODO: get position of attacker
-                // TODO: BurrowTowardAttacker(attackerPosition)
+                // TODO: If attacker was ranged and If not in melee range with an enemy and burrowChance * totalDamageDealt <= rand.value and burrowComp != null
+                IntVec3 attackerPosition = dinfo.Instigator.Position;
+                CompBurrowing burrowComp = GetComp<CompBurrowing>();
+                burrowComp.BurrowTowardAttacker(attackerPosition);
             }
         }
 

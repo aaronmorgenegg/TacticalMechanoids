@@ -7,6 +7,8 @@ namespace TacticalMechanoids
     {
         private bool isBurrowed = false;
         private int burrowCounter = 0;
+        private Map mapToBurrowTo;
+        private IntVec3 positionToBurrowTo;
 
         public CompProperties_Burrowing Props
         {
@@ -24,7 +26,7 @@ namespace TacticalMechanoids
                 burrowCounter--;
                 if (burrowCounter <= 0)
                 {
-                    // TODO: Pop up at the burrow location
+                    GenSpawn.Spawn(this.parent, positionToBurrowTo, mapToBurrowTo, WipeMode.Vanish);
                 }
             }
         }
@@ -32,9 +34,12 @@ namespace TacticalMechanoids
         public void BurrowTowardAttacker(IntVec3 attackerPosition)
         {
             // TODO: Get random, available position between intPosition and attackerPosition
-            // TODO: Despawn, create burrowing motes + change sprite to digging.
+            // TODO: Despawn, create burrowing motes + sound + change sprite to digging.
+            burrowCounter = Props.burrowDuration; // TODO: adjust the duration based on the distance to burrow
+            mapToBurrowTo = this.parent.Map;
+            positionToBurrowTo = attackerPosition;
+            this.parent.DeSpawn();
             isBurrowed = true;
-            burrowCounter = Props.burrowDuration;
         }
 
     }

@@ -105,6 +105,9 @@ Mech Mortar(Name?)
 Shellshock(Name?) Minelayer bot.
 	- A slow moving, armored, tortoise? shaped mechanoid with a powerful explosive gun, also periodically lays mines where it walks.
 
+Big Boss mech(Name?)
+	- A huge, very deadly, very challenging mechanoid.
+
 Events:
 
 Research Team: Researcher/s are fleeing from a nearby mechanoid hive after recovering a hi-tech archotech/mechanoid artifact. They ask for protection and an energy source while they research the artifact, and offer to share their discoveries and technology once they are safe from the mechanoids.
